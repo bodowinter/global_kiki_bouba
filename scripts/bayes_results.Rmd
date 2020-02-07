@@ -1,0 +1,315 @@
+---
+title: "kiki/bouba Bayesian model"
+author: "Bodo Winter"
+date: "8/8/2019"
+output: html_document
+---
+
+## Introduction
+
+Load packages:
+
+```{r, message = FALSE}
+library(tidyverse)
+library(brms)
+library(gridExtra)
+```
+
+Load ggplot2 theme:
+
+```{r}
+source('theme_timo.R')
+```
+
+Load the model:
+
+```{r}
+load('../models/kiki_mdl.RData')
+load('../models/kiki_script_mdl.RData')
+load('../models/kiki_field_mdl.RData')
+```
+
+Load language data for plotting:
+
+```{r, message = FALSE}
+lang_info <- read_csv('../data/language_info.csv')
+field_info <- read_csv('../data/language_info_field.csv')
+```
+
+## Posterior predictive checks:
+
+Posterior predictive checks:
+
+```{r cache = TRUE, fig.width = 8, fig.height = 6}
+pp_check(kiki_mdl, nsample = 1000)
+pp_check(kiki_script_mdl, nsample = 1000)
+pp_check(kiki_field_mdl, nsample = 1000)
+```
+
+## Summarize models:
+
+First, overall summary:
+
+```{r}
+summary(kiki_mdl)
+```
+
+Extract the posteriors:
+
+```{r}
+web_posts <- posterior_samples(kiki_mdl)
+```
+
+Get the 95% credible interval in terms of predicted probabilities:
+
+```{r}
+plogis(mean(web_posts$b_Intercept))
+plogis(quantile(web_posts$b_Intercept, 0.025))
+plogis(quantile(web_posts$b_Intercept, 0.975))
+```
+
+Posterior predictive probability of the intercept being above chance (logit = 0).
+
+```{r}
+sum(web_posts$b_Intercept < 0) / nrow(web_posts)
+```
+
+Second, field model:
+
+```{r}
+summary(kiki_field_mdl)
+```
+
+Extract the posteriors:
+
+```{r}
+field_posts <- posterior_samples(kiki_field_mdl)
+```
+
+Get the 95% credible interval in terms of predicted probabilities:
+
+```{r}
+plogis(mean(field_posts$b_Intercept))
+plogis(quantile(field_posts$b_Intercept, 0.025))
+plogis(quantile(field_posts$b_Intercept, 0.975))
+```
+
+Posterior predictive probability of the intercept being above chance (logit = 0).
+
+```{r}
+sum(field_posts$b_Intercept < 0) / nrow(field_posts)
+```
+
+## Check orthography-related effects in web-based experiments:
+
+Check script effect in web experiment:
+
+```{r}
+summary(kiki_script_mdl)
+```
+
+Get the posterior predictions:
+
+```{r}
+script_posts <- posterior_samples(kiki_script_mdl)
+```
+
+Check whether the coefficients are reliably different from 0:
+
+```{r}
+sum(script_posts$b_Scriptroman > 0) / nrow(script_posts)
+```
+
+What is the predicted increase in probability for roman script?
+
+```{r}
+# Non-roman script:
+
+plogis(fixef(kiki_script_mdl)[1, 1])
+
+# Roman script:
+
+plogis(fixef(kiki_script_mdl)[1, 1] + fixef(kiki_script_mdl)[2, 1])
+
+# Odds:
+
+exp(fixef(kiki_script_mdl)[2, 1])
+```
+
+## Plot of predicted ACC by language, web experiment:
+
+Get the posteriors for the average effects:
+
+```{r}
+lang_samples <- select(web_posts, contains('Language'))
+lang_samples <- lang_samples[, -1]
+```
+
+Compute 95% CI for all of these:
+
+```{r}
+lower_CIs <- apply(lang_samples, FUN = function(x) quantile(x, 0.025), MARGIN = 2)
+upper_CIs <- apply(lang_samples, FUN = function(x) quantile(x, 0.975), MARGIN = 2)
+post_mean <- colMeans(lang_samples)
+```
+
+Put those into a table, with logistic transform back to probabilities:
+
+```{r}
+lang_intervals <- tibble(Language = str_extract(colnames(lang_samples), '[A-Z]{2,2}'),
+                         lower_CI = plogis(lower_CIs),
+                         upper_CI = plogis(upper_CIs),
+                         M = plogis(post_mean))
+```
+
+Merge with name for plotting:
+
+```{r}
+lang_intervals$Name <- lang_info[match(lang_intervals$Language, lang_info$Language), ]$Name
+```
+
+Change "English UK" label to just "English":
+
+```{r}
+lang_intervals[lang_intervals$Name == 'English UK', ]$Name <- 'English'
+```
+
+Change the order of language levels according to the posterior mean:
+
+```{r}
+lang_intervals <- arrange(lang_intervals, M)
+lang_intervals <- mutate(lang_intervals,
+                         Name = factor(Name, levels = lang_intervals$Name))
+```
+
+Make a plot with accuracy per language:
+
+```{r, fig.width = 10, fig.height = 6}
+lang_plot <- ggplot(data = lang_intervals,
+                    mapping = aes(x = Name, y = M, ymin = lower_CI, ymax = upper_CI)) +
+  geom_errorbar(width = 0.3, lwd = 1) +
+  geom_point(pch = 22, size = 7, fill = 'goldenrod3', col = 'black', stroke = 1) +
+  geom_hline(yintercept = 1/2, linetype = 2) +
+  theme_timo +
+  annotate('text', label = 'Chance level', x = 24.5, y = 1/2 + 0.04,
+           size = 10, fontface = 'bold', hjust = 1) +
+  coord_cartesian(ylim = c(0, 1)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, face = 'bold', size = 24),
+        axis.title.y = element_text(margin = margin(t = 0, r = 50, b = 0, l = 0),
+                                    size = 30),
+        axis.text.y = element_text(face = 'bold', size = 20),
+        plot.title = element_text(face = 'bold', size = 36, hjust = 0,
+                                  margin = margin(t = 0, r = 0, b = 20, l = 0))) +
+  labs(title = '(a) Estimated accuracy by language, web experiment',
+       x = '', y = 'Posterior probability')
+lang_plot
+```
+
+## Plot of ACC per language, field data:
+
+Getting the posteriors per language:
+
+```{r}
+field_lang_samples <- select(field_posts, contains('Language'))
+head(field_lang_samples)
+```
+
+Get rid of the first, which is across all of them:
+
+```{r}
+field_lang_samples <- field_lang_samples[, -1]
+```
+
+Compute 95% CI for all of these:
+
+```{r}
+lower_CIs <- apply(field_lang_samples, FUN = function(x) quantile(x, 0.025), MARGIN = 2)
+upper_CIs <- apply(field_lang_samples, FUN = function(x) quantile(x, 0.975), MARGIN = 2)
+post_mean <- colMeans(field_lang_samples)
+```
+
+Put those into a table, with logistic transform back to probabilities:
+
+```{r}
+field_lang_intervals <- tibble(Language = str_extract(colnames(field_lang_samples), '[A-Z]{2,2}'),
+                               lower_CI = plogis(lower_CIs),
+                               upper_CI = plogis(upper_CIs),
+                               M = plogis(post_mean))
+```
+
+Add language names for plotting:
+
+```{r}
+field_lang_intervals$Name <- NA
+field_lang_intervals[field_lang_intervals$Language == 'DE', ]$Name <- 'German'
+field_lang_intervals[field_lang_intervals$Language == 'BE', ]$Name <- 'English (UK)'
+field_lang_intervals[field_lang_intervals$Language == 'BR', ]$Name <- 'Tashlhiyt Berber'
+field_lang_intervals[field_lang_intervals$Language == 'PA', ]$Name <- 'Palikur'
+field_lang_intervals[field_lang_intervals$Language == 'VA', ]$Name <- 'Daakie'
+field_lang_intervals[field_lang_intervals$Language == 'SR', ]$Name <- 'Brazilian Portuguese'
+```
+
+Change the order of language levels according to the posterior mean:
+
+```{r}
+field_lang_intervals <- arrange(field_lang_intervals, M)
+field_lang_intervals <- mutate(field_lang_intervals,
+                         Name = factor(Name, levels = field_lang_intervals$Name))
+```
+
+Make a plot with accuracy per language:
+
+```{r, fig.width = 10, fig.height = 6}
+field_lang_plot <- ggplot(data = field_lang_intervals,
+                    mapping = aes(x = Name, y = M, ymin = lower_CI, ymax = upper_CI)) +
+  geom_errorbar(width = 0.3, lwd = 1) +
+  geom_point(pch = 22, size = 7, fill = 'goldenrod3', col = 'black', stroke = 1) +
+  geom_hline(yintercept = 1/2, linetype = 2) +
+  theme_timo +
+  annotate('text', label = 'Chance level', x = 7.5, y = 1/2 + 0.04,
+           size = 10, fontface = 'bold', hjust = 1) +
+  coord_cartesian(ylim = c(0, 1)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, face = 'bold', size = 24),
+        axis.title.y = element_text(margin = margin(t = 0, r = 50, b = 0, l = 0),
+                                    size = 30),
+        axis.text.y = element_text(face = 'bold', size = 20),
+        plot.title = element_text(face = 'bold', size = 36, hjust = 0,
+                                  margin = margin(t = 0, r = 0, b = 20, l = 0))) +
+  labs(title = '(b) Estimated accuracy by language, field experiment',
+       x = '', y = 'Posterior probability')
+field_lang_plot
+```
+
+Create a plot of both of these:
+
+```{r}
+my_layout <- rbind(c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(NA, NA, NA, NA, NA, NA, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA))
+
+field_multi_plot <- grid.arrange(lang_plot, field_lang_plot,
+                           layout_matrix = my_layout)
+ggsave(plot = field_multi_plot, '../figures/posterior_means_by_language.png', width = 20, height = 22)
+ggsave(plot = field_multi_plot, '../figures/posterior_means_by_language.pdf', width = 20, height = 22)
+```
+
+This completes this analysis.
+

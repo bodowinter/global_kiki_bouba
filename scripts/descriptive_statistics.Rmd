@@ -1,0 +1,316 @@
+---
+title: "Descriptive stats for kiki/bouba experiments (field + web)"
+author: "Bodo Winter"
+date: "7/30/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is the preprocessing script that cleans the data from the online and the field work experiment.
+
+## Load in data
+
+Load packages:
+
+```{r, message = FALSE}
+library(tidyverse)
+library(lsr)    # For calculating Cramer's V 
+library(gridExtra)
+```
+
+Load data:
+
+```{r, message = FALSE, warning = FALSE}
+kiki <- read_csv('../data/web_experiment_cleaned.csv')
+field <- read_csv('../data/field_experiment_cleaned.csv')
+```
+
+Load ggplot2 theme:
+
+```{r}
+source('theme_timo.R')
+```
+
+## Overall stats:
+
+How may speakers?
+
+```{r}
+# Web experiment:
+
+length(unique(kiki$ID))
+
+# Field experiment:
+
+length(unique(field$ID))
+```
+
+How many languages?
+
+```{r}
+# Web experiment:
+
+length(unique(kiki$Language))
+
+# Field experiment:
+
+length(unique(field$Language))
+```
+
+Total number of languages across experiments?
+
+```{r}
+# Minus German, English, Portuguese, which are counted doubly as they occur in both:
+
+length(unique(kiki$Language)) + length(unique(field$Language)) - 3
+```
+
+How many language families?
+
+```{r}
+# +1 because Palikur from the field data is Arawakan, which is a language family that is not in the web data
+
+length(unique(kiki$Family)) + 1
+```
+
+How many Indo-European languages?
+
+```{r}
+unique(filter(kiki, Family == 'IE')$Name)
+length(unique(filter(kiki, Family == 'IE')$Name))
+```
+
+What are the non-Indo-European language families?
+
+```{r}
+unique(filter(kiki, Family != 'IE')$Family)
+```
+
+How many per language?
+
+```{r}
+# Web experiment:
+
+table(filter(kiki, !duplicated(ID))$Language)
+
+# Field experiment:
+
+table(filter(field, !duplicated(ID))$Language)
+```
+
+## Web experiment:
+
+Check the overall proportion of matches:
+
+```{r}
+round(mean(kiki$Match, na.rm = TRUE), 2)
+```
+
+
+Overall 71% matching the hypothesis (that "kiki" input = kiki shape, and "bouba" input = bouba shape).
+
+Check this for the different languages in separate mini tables:
+
+```{r}
+lang_tab <- kiki %>%
+  group_by(Language, Name, Family, Script) %>%
+  summarize(Match = mean(Match), Match = round(Match, 2))
+
+lang_tab <- kiki %>% count(Language) %>% right_join(lang_tab)
+
+lang_tab <- lang_tab %>% 
+  arrange(desc(Match))
+
+lang_tab %>% 
+  print(n = Inf)
+```
+
+Get the average proportions by script:
+
+```{r}
+kiki %>% group_by(Script) %>% 
+  summarize(Match = mean(Match))
+```
+
+Make a plot of this:
+
+```{r, fig.width = 12, fig.height = 6}
+lang_tab %>%
+  ggplot(aes(x = reorder(Language, Match),
+             y = Match, fill = Script)) +
+  geom_col() +
+  labs(x = '', y = 'Proportion\n') +
+  ggtitle('Proportion match by language') + 
+  coord_cartesian(ylim = c(0, 1)) + 
+  geom_hline(yintercept = 0.5, linetype = 2, size = 2) + 
+  scale_fill_viridis_d(option = 'D', begin = 0.3, end = 0.8) +
+  theme_timo
+```
+
+This suggests that languages with different scripts on average seem to have less strong of a kiki/bouba effect. Of course, that's partially confounded with genealogical associations since languages with different scripts are more likely non-Indo-European.
+
+Create a variable for IE versus non-IE:
+
+```{r}
+lang_tab <- mutate(lang_tab,
+                   `Language Family` = ifelse(Family == 'IE', 'IE', 'other'))
+```
+
+Change the script label so it's nice for plotting:
+
+```{r}
+lang_tab <- mutate(lang_tab,
+                   Script = ifelse(Script == 'roman', 'Roman script', 'non-Roman script'))
+```
+
+Make a plot broken up by IE versus non-IE:
+
+```{r, fig.width = 12, fig.height = 12}
+# Aesthetics:
+
+web_p <- lang_tab %>%
+  ggplot(aes(x = reorder(Name, Match),
+             y = Match, fill = Script))
+
+# Geoms:
+
+web_p <- web_p +
+  geom_bar(stat = 'identity', width = 0.7) +
+  geom_hline(yintercept = 0.5, linetype = 2, size = 2)
+
+# Extra stuff:
+
+web_p <- web_p + 
+  labs(x = '', y = 'Proportion\n') +
+  ggtitle('(a) Web experiment') + 
+  coord_cartesian(ylim = c(0, 1)) + 
+  scale_fill_viridis_d(option = 'D', begin = 0.3, end = 0.8, direction = 1) +
+  theme_timo +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, face = 'bold', size = 24),
+        axis.text.y = element_text(face = 'bold', size = 24),
+        axis.title = element_text(face = 'bold', size = 40),
+        axis.title.y = element_text(face = 'bold', size = 40),
+        plot.title = element_text(face = 'bold', size = 40,
+                                  margin = margin(t = 0, r = 0,
+                                                  b = 20, l = 0)),
+        legend.text = element_text(size = 24),
+        legend.title = element_text(size = 32, face = 'bold'))
+
+# Show:
+
+web_p
+```
+
+## Field experiment:
+
+First, overall match:
+
+```{r}
+mean(field$Match, na.rm = TRUE)
+```
+
+Check result depending on whether modality was auditory or written (aggregating across languages and speakers):
+
+```{r}
+field %>% group_by(Modality) %>% 
+  summarize(Match = mean(Match, na.rm = TRUE))
+```
+
+Not much going on here. A mere 3% difference.
+Check results by languages:
+
+```{r}
+field_lang_tab <- field %>% 
+  group_by(Language) %>%
+  summarize(Match = mean(Match, na.rm = TRUE),
+            Match = round(Match, 2))
+
+field_lang_tab <- field %>% count(Language) %>% right_join(field_lang_tab)
+
+field_lang_tab <- field_lang_tab %>% 
+  arrange(desc(Match))
+
+field_lang_tab
+```
+
+For plot, create full language names:
+
+```{r}
+field_lang_tab$Name <- c('British English',
+                         'Tashlhiyt Berber',
+                         'German',
+                         'Daakie',
+                         'Palikur',
+                         'Brazilian Portuguese')
+```
+
+Make a plot of this:
+
+```{r, fig.width = 12, fig.height = 6}
+# Aesthetics:
+
+field_p <- field_lang_tab %>%
+  ggplot(aes(x = reorder(Name, Match),
+             y = Match))
+
+# Geoms:
+
+field_p <- field_p + 
+  geom_bar(fill = 'gray42', stat = 'identity', width = 0.8)
+
+# Extra stuff:
+
+field_p <- field_p +
+  labs(x = '', y = 'Proportion\n') +
+  ggtitle('(b) Field experiment') +
+  coord_cartesian(ylim = c(0, 1)) + 
+  geom_hline(yintercept = 0.5, linetype = 2, size = 2) + 
+  theme_timo +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, face = 'bold', size = 24),
+        axis.text.y = element_text(face = 'bold', size = 24),
+        axis.title = element_text(face = 'bold', size = 40),
+        axis.title.y = element_text(face = 'bold', size = 40),
+        legend.position = 'none',
+        plot.title = element_text(face = 'bold', size = 40,
+                                  margin = margin(t = 0, r = 0,
+                                                  b = 20, l = 0)))
+
+# Plot:
+
+field_p
+```
+
+## Combine both plots:
+
+First, create a layout matrix:
+
+```{r}
+my_layout <- rbind(c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+                   c(NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA, NA, NA),
+                   c(2, 2, 2, 2, 2, 2, NA, NA, NA, NA, NA))
+```
+
+Then, create the double plot:
+
+```{r, fig.width = 14, fig.height = 10}
+multi_plot <- grid.arrange(web_p, field_p,
+                           layout_matrix = my_layout)
+ggsave(plot = multi_plot, '../figures/per_language_barplots.png', width = 24, height = 20)
+ggsave(plot = multi_plot, '../figures/per_language_barplots.pdf', width = 24, height = 20)
+```
+
+This completes this analysis.

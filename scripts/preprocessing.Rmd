@@ -1,0 +1,387 @@
+---
+title: "Preprocessing Data: Online Experiment"
+author: "Bodo Winter"
+date: "7/30/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is the preprocessing script that cleans the data from the online and the field work experiment. The main data is from the vocal iconicity challenge and we need to extract the kiki/bouba data.
+
+## Load in data
+
+Load packages:
+
+```{r, message = FALSE}
+library(tidyverse)
+```
+
+Load in online data:
+
+```{r, message = FALSE, warning = FALSE}
+# Get vector with list of all files:
+
+all_files <- list.files('../data/online/')
+
+# Create an empty object which will be grown with all the files:
+
+web <- c()
+for (i in seq_along(all_files)) {
+  this_file <- str_c('../data/online/', all_files[i])
+  this_file <- read_delim(this_file, delim = '\t')
+  web <- rbind(web, this_file)
+}
+```
+
+Get only those that have "kiki.wav" and "bouba.wav" as files.
+
+```{r}
+web <- filter(web, audio %in% c('kiki.wav', 'bouba.wav'))
+```
+
+How much data do we have per experiment? (divide by two because of two data points per participant)
+
+```{r}
+table(web$experiment) / 2
+```
+
+Languages are stored in the format "AL", "EN" etc. Let's process the "experiment" column so that it has only those strings:
+
+```{r}
+web <- mutate(web,
+              Language = str_extract(experiment, '[A-Z]{2,2}'))
+```
+
+Just in case some session IDs recur across the different experiments, let's create a unique identifier column by pasting languages and session IDs together:
+
+```{r}
+web <- mutate(web,
+              ID = str_c(Language, '_', session))
+```
+
+## Exclusions:
+
+Exclude those that have 'l1' == 'q' which is Ola's code for her own test runs.
+
+```{r}
+web <- filter(web,
+              l1 != 'q')
+web <- filter(web,
+              firstlanguage != 'q')
+```
+
+Check number of playbacks:
+
+```{r}
+table(web$playbacks)
+```
+
+Exclude 0 playbacks (didn't listen to the sound):
+
+```{r}
+web <- filter(web, playbacks != 0)
+```
+
+Check ages:
+
+```{r}
+table(web$participantage)
+```
+
+Get rid of everybody below 18:
+
+```{r}
+web <- filter(web, participantage >= 18)
+```
+
+Check input values:
+
+```{r}
+table(web$inputvalue)
+```
+
+Get rid of the responses that are neither "kiki" nor "bouba", and likewise for "r" and "l":
+
+```{r}
+web <- filter(web, !inputvalue %in% c('jeść', 'wąż'))
+```
+
+## Add language info:
+
+Load language file:
+
+```{r, message = FALSE}
+langs <- read_csv('../data/language_info.csv')
+```
+
+Merge:
+
+```{r}
+web <- left_join(web, langs)
+```
+
+## Preprocessing:
+
+How much data per language?
+
+```{r}
+table(web$Language)
+```
+
+How many data per participant?
+
+```{r}
+ppt_N <- web %>% count(ID)
+```
+
+Check whether there's anybody who doesn't have 2 responses?
+
+```{r}
+all(ppt_N$n == 2)
+```
+
+Which one?
+
+```{r}
+filter(ppt_N, n != 2)
+```
+
+Get rid of this participant:
+
+```{r}
+# Vector of participants to exclude:
+
+excludes <- filter(ppt_N, n != 2) %>% pull(ID)
+
+# Exclude:
+
+web <- filter(web, !(ID %in% excludes))
+```
+
+Count data per language again:
+
+```{r}
+web %>% count(Language) %>% 
+  mutate(n = n / 2) %>% 
+  print(n = Inf)
+```
+
+Not enough data for MS (only data from one speaker), as well as Tamil (only two speakers):
+
+```{r}
+web <- filter(web, Language != "MS")
+web <- filter(web, Language != "TA")
+```
+
+Change main response to "Resp":
+
+```{r}
+web <- rename(web,
+               Resp = inputvalue)
+```
+
+Let's process the main predictor (the audio file shown):
+
+```{r}
+web <- mutate(web,
+              Condition = str_replace(audio, '\\.wav', ''),
+              Condition = str_to_title(Condition))
+```
+
+## Process L2 info:
+
+Extract who knows English from l2 column.
+
+```{r}
+web <- mutate(web,
+              EnglishL2 = str_detect(l2, 'english'))
+```
+
+Create tables that tabulate L2 speaker info per language.
+
+```{r}
+# Create table per subject:
+
+L2_counts <- web %>% filter(Language != 'EN') %>% count(ID, Language, EnglishL2)
+
+# Create table per language:
+
+L2_tab <- with(L2_counts, table(Language, EnglishL2))
+
+```
+
+Check L2 speaker stats:
+
+```{r}
+L2_tab
+
+colSums(L2_tab)
+
+colSums(L2_tab) / sum(L2_tab)
+```
+
+
+## By-participant preprocessing
+
+Arguably, the responses to "kiki" and "bouba", since they immediately followed each other, are not independent. 
+
+Let's create a file of matching versus non-matching participants. First, create a vector of Condition/Resp contingency tables broken up by participant:
+
+```{r}
+ID_tabs <- with(web, table(Condition, Resp, ID))
+```
+
+Loop through this and save whether they were 100% matching:
+
+```{r}
+matches <- numeric(dim(ID_tabs)[3])
+
+for (i in seq_along(matches)) {
+  matches[i] <- as.integer(sum(diag(ID_tabs[, , i])) == 2)
+}
+```
+
+Put this together with ID info into a table:
+
+```{r}
+ids <- unique(web$ID)
+kiki_ppt <- tibble(ID = ids, Match = matches)
+```
+
+Merge this with the relevant info:
+
+```{r}
+kiki_ppt$Language <- web[match(kiki_ppt$ID, web$ID), ]$Language
+kiki_ppt$Name <- web[match(kiki_ppt$ID, web$ID), ]$Name
+kiki_ppt$Script <- web[match(kiki_ppt$ID, web$ID), ]$Script
+kiki_ppt$Family <- web[match(kiki_ppt$ID, web$ID), ]$Family
+kiki_ppt$Autotyp_Area <- web[match(kiki_ppt$ID, web$ID), ]$Autotyp_Area
+```
+
+Write to file:
+
+```{r}
+write_csv(kiki_ppt, '../data/web_experiment_cleaned.csv')
+```
+
+## Fieldwork data:
+
+Get the fieldwork data:
+
+```{r, message = FALSE}
+field <- read_delim('../data/kiki_fieldwork.csv',
+                    delim = ';')
+```
+
+The field response file is wide format. Let's transform this to long format:
+
+```{r}
+field <- gather(field, 'ID', 'Choice', -file)
+```
+
+Get the language info out of the ID column:
+
+```{r}
+field <- mutate(field,
+                Language = str_extract(ID, '[A-Z]+'))
+```
+
+Get rid of the r and l experiment part:
+
+```{r}
+field <- filter(field,
+                !(file %in% c('r', 'l')))
+```
+
+Get rid of those that have choice == 0.
+
+```{r}
+field <- filter(field,
+                Choice != 0)
+```
+
+Check whether all participants have the same amount of data:
+
+```{r}
+ppt_N <- field %>% count(ID)
+
+all(ppt_N$n == 2)
+```
+
+Yes, they do.
+
+Separate the info about whether the stimulus was "kiki" or "bouba", and whether the delivery was "auditory" or "orthographic".
+
+```{r}
+field <- separate(field, file, into = c('Condition', 'Modality'))
+```
+
+Check how many there are per language:
+
+```{r}
+table(field$Language)
+```
+
+Get rid of "PL" and "EN" (only 2 data points):
+
+```{r}
+field <- filter(field,
+                !(Language %in% c('EN', 'PL')))
+```
+
+Check distribution of languages across conditions:
+
+```{r}
+with(field, table(Language, Modality))
+```
+
+Create a file where the matches are stored:
+
+```{r}
+all_IDs <- unique(field$ID)
+orts <- rep(NA, length(all_IDs))
+auds <- rep(NA, length(all_IDs))
+for (i in seq_along(all_IDs)) {
+  this_df <- filter(field, ID == all_IDs[i])
+  
+  if (any(this_df$Modality == 'aud')) {
+    this_auds <- filter(this_df, Modality == 'aud')
+    this_auds <- with(this_auds, table(Condition, Choice))
+    auds[i] <- as.integer(sum(diag(this_auds)) == 2)
+  }
+
+  if (any(this_df$Modality == 'ort')) {
+    this_orts <- filter(this_df, Modality == 'ort')
+    this_orts <- with(this_orts, table(Condition, Choice))
+    orts[i] <- as.integer(sum(diag(this_orts)) == 2)
+  }  
+}
+```
+
+Put this into a tibble:
+
+```{r}
+field_ppt <- tibble(ID = all_IDs, Ort = orts, Aud = auds)
+```
+
+Make this into a long format:
+
+```{r}
+field_ppt <- gather(field_ppt, key = 'Modality', value = 'Match', -ID)
+```
+
+Add the language information:
+
+```{r}
+field_ppt$Language <- field[match(field_ppt$ID, field$ID), ]$Language
+```
+
+Write this:
+
+```{r}
+write_csv(field_ppt, '../data/field_experiment_cleaned.csv')
+```
+
