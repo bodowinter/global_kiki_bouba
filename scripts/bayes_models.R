@@ -43,6 +43,12 @@ field_all <- bind_rows(NAs, field_all)
 
 field_all$Language <- field[match(field_all$ID, field$ID), ]$Language
 
+# As another analysis strategy, we will look at the auditory and written
+# version separately:
+
+ort <- filter(field, Modality == 'Ort', !is.na(Match))
+aud <- filter(field, Modality == 'Aud', !is.na(Match))
+
 # For parallel processing:
 
 options(mc.cores=parallel::detectCores())
@@ -106,3 +112,36 @@ kiki_script_mdl <- brm(Match ~ Script + (1|Language) + (1 + Script|Family),
                                max_treedepth = 13),
                 seed = 666)
 save(kiki_script_mdl, file = '../models/kiki_script_mdl.RData')
+
+## Auditory analysis only:
+
+aud_mdl <- brm(Match ~ 1 + (1|Language),
+                data = aud,
+                family = bernoulli,
+                init = 0,
+                cores = 4,
+                seed = 666,
+                iter = myiter,
+                warmup = mywarmup,
+                prior = my_priors_intercept_only,
+                control = list(adapt_delta = 0.995,
+                               max_treedepth = 13))
+save(aud_mdl, file = '../models/field_aud_mdl.RData')
+
+## Written analysis only:
+
+ort_mdl <- brm(Match ~ 1 + (1|Language),
+                data = ort,
+                family = bernoulli,
+                init = 0,
+                cores = 4,
+                seed = 666,
+                iter = myiter,
+                warmup = mywarmup,
+                prior = my_priors_intercept_only,
+                control = list(adapt_delta = 0.995,
+                               max_treedepth = 13))
+save(ort_mdl, file = '../models/field_ort_mdl.RData')
+
+
+

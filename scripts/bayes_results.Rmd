@@ -27,6 +27,8 @@ Load the model:
 load('../models/kiki_mdl.RData')
 load('../models/kiki_script_mdl.RData')
 load('../models/kiki_field_mdl.RData')
+load('../models/field_ort_mdl.RData')
+load('../models/field_aud_mdl.RData')
 ```
 
 Load language data for plotting:
@@ -44,6 +46,8 @@ Posterior predictive checks:
 pp_check(kiki_mdl, nsample = 1000)
 pp_check(kiki_script_mdl, nsample = 1000)
 pp_check(kiki_field_mdl, nsample = 1000)
+pp_check(aud_mdl, nsample = 1000)
+pp_check(ort_mdl, nsample = 1000)
 ```
 
 ## Summarize models:
@@ -74,7 +78,7 @@ Posterior predictive probability of the intercept being above chance (logit = 0)
 sum(web_posts$b_Intercept < 0) / nrow(web_posts)
 ```
 
-Second, field model:
+Second, field model (with modality effect ignored):
 
 ```{r}
 summary(kiki_field_mdl)
@@ -98,6 +102,45 @@ Posterior predictive probability of the intercept being above chance (logit = 0)
 
 ```{r}
 sum(field_posts$b_Intercept < 0) / nrow(field_posts)
+```
+
+## Separate analysis for auditory and written version of field experiment:
+
+Separate model summaries:
+
+```{r}
+summary(aud_mdl)
+summary(ort_mdl)
+```
+
+Extract posteriors:
+
+```{r}
+aud_posts <- posterior_samples(aud_mdl)
+ort_posts <- posterior_samples(ort_mdl)
+```
+
+Posterior estimates of the intercepts:
+
+```{r}
+sum(aud_posts$b_Intercept < 0) / nrow(aud_posts)
+sum(ort_posts$b_Intercept < 0) / nrow(ort_posts)
+```
+
+Get the 95% credible interval in terms of predicted probabilities, auditory only:
+
+```{r}
+plogis(mean(aud_posts$b_Intercept))
+plogis(quantile(aud_posts$b_Intercept, 0.025))
+plogis(quantile(aud_posts$b_Intercept, 0.975))
+```
+
+Get the 95% credible interval in terms of predicted probabilities, written only:
+
+```{r}
+plogis(mean(ort_posts$b_Intercept))
+plogis(quantile(ort_posts$b_Intercept, 0.025))
+plogis(quantile(ort_posts$b_Intercept, 0.975))
 ```
 
 ## Check orthography-related effects in web-based experiments:

@@ -220,6 +220,13 @@ field %>% group_by(Modality) %>%
 ```
 
 Not much going on here. A mere 3% difference.
+
+For various reasons, we want to focus on the spoken version of the task. This is also because it was always run first.
+
+```{r}
+field <- filter(field, Modality == 'Aud')
+```
+
 Check results by languages:
 
 ```{r}
