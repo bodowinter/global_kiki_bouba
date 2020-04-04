@@ -9,16 +9,26 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This is the preprocessing script that cleans the data from the online and the field work experiment.
+This is script performs descriptive statistics of the online data and the field work experiment.
+
+Note on the field experiment:
+The field work experiment is not reported in the main analysis. We do find a clear kiki/bouba effect in the field work data, however, there was a critical error in the procedure: the written version was always run before the spoken version. As a result of this, the spoken versus written comparison is not interpretable, as the spoken results could be biased by having seen a prior orthographic representation. Moreover, the web experiment and the field experiment are thus not comparable anymore.
 
 ## Load in data
 
 Load packages:
 
-```{r, message = FALSE}
+```{r, message = FALSE, warning = FALSE}
 library(tidyverse)
 library(lsr)    # For calculating Cramer's V 
 library(gridExtra)
+
+# For mapping:
+
+library(sf)
+library(ggpubr)
+library(rnaturalearth)
+library(rnaturalearthdata)
 ```
 
 Load data:
@@ -26,6 +36,10 @@ Load data:
 ```{r, message = FALSE, warning = FALSE}
 kiki <- read_csv('../data/web_experiment_cleaned.csv')
 field <- read_csv('../data/field_experiment_cleaned.csv')
+
+# Marcus's newly recoded L2 data:
+
+L2 <- read_csv('../data/english_recoded.csv')
 ```
 
 Load ggplot2 theme:
@@ -71,9 +85,9 @@ length(unique(kiki$Language)) + length(unique(field$Language)) - 3
 How many language families?
 
 ```{r}
-# +1 because Palikur from the field data is Arawakan, which is a language family that is not in the web data
+# +1 with field data because Palikur from the field data is Arawakan, which is a language family that is not in the web data
 
-length(unique(kiki$Family)) + 1
+length(unique(kiki$Family))
 ```
 
 How many Indo-European languages?
@@ -101,6 +115,54 @@ table(filter(kiki, !duplicated(ID))$Language)
 table(filter(field, !duplicated(ID))$Language)
 ```
 
+How many languages that have non-Roman scripts?
+
+```{r}
+unique(kiki[kiki$Script != 'roman', ]$Name)
+length(unique(kiki[kiki$Script != 'roman', ]$Language))
+
+# How many of the total is that?
+
+length(unique(kiki[kiki$Script != 'roman', ]$Language)) / length(unique(kiki$Language))
+```
+
+9 languages out of 24, more than a third, have non-Roman scripts.
+
+Check first language categories of L2 speakers that indicate to be L1 (see whether everything has been correctly coded):
+
+```{r}
+filter(kiki, English_MP == 'L1')$Language
+```
+
+There is a German and a French speaker that according to Marcus's recording of the L1/L2 info are wrongly coded as German/French. These arae English natives living in Germany / France who have filled out the German / French version of the survey.
+
+```{r}
+kiki[which(kiki$English_MP == 'L1' & kiki$Language == 'DE'), ]$Language <- 'EN'
+kiki[which(kiki$English_MP == 'L1' & kiki$Language == 'FR'), ]$Language <- 'EN'
+```
+
+How many per L2 category?
+
+```{r}
+kiki %>% count(English_MP) %>% mutate(Prop = n / sum(n),
+                                      Prop = round(Prop, 2))
+```
+
+## The first five participants in the field experiment have been wrongly coded:
+
+Email from Ola Feb 10, 2020 indicates that the first five participants in the German data of the field experiment have been erroneously coded as mismatches (0), even though they were matches:
+
+```{r}
+these_ppts <- str_c('DE0', 1:5)
+field[field$ID %in% these_ppts & !is.na(field$Match), ]$Match <- 1
+```
+
+Write this:
+
+```{r}
+write_csv(field, '../data/field_experiment_cleaned.csv')
+```
+
 ## Web experiment:
 
 Check the overall proportion of matches:
@@ -109,8 +171,15 @@ Check the overall proportion of matches:
 round(mean(kiki$Match, na.rm = TRUE), 2)
 ```
 
-
 Overall 71% matching the hypothesis (that "kiki" input = kiki shape, and "bouba" input = bouba shape).
+
+Check this for the different L2:
+
+```{r}
+kiki %>% group_by(English_MP) %>% 
+  summarize(Match = round(mean(Match, na.rm = TRUE), 2)) %>% 
+  arrange(Match)
+```
 
 Check this for the different languages in separate mini tables:
 
@@ -204,7 +273,46 @@ web_p <- web_p +
 web_p
 ```
 
+Write the table with only those that clearly have 'no' for L2 English, for Bayesian analysis:
+
+```{r}
+no_english <- filter(kiki, English_MP == 'no')
+write_csv(no_english, 'web_experiment_cleaned_no_english.csv')
+```
+
 ## Field experiment:
+
+For the field experiment, we had the planning issue that in all cases except Daakie, the written experiment was run first. This makes this data not open to testing the idea that there is a genuine effect of spoken iconicity, as the spoken responses are contaminated because of having seen the spiky and round letters first.
+
+Because of this, we are only going to look at Daakie for the analysis reported in the paper.
+
+It should be noted that the results from the other languages do support the kiki/bouba effect, but only the ritten version 
+
+Let's get only the Daakie data points:
+
+```{r}
+field_red <- filter(field, Language == 'VA', Modality == 'Aud')
+```
+
+First, overall match:
+
+```{r}
+str_c(round(mean(field_red$Match), 3) * 100, '%')
+```
+
+This is such little data, let's make a table:
+
+```{r}
+table(field_red$Match)
+```
+
+Write this to table for Bayesian analysis:
+
+```{r}
+write_csv(field_red, '../data/field_daakie_only.csv')
+```
+
+## Analysis of the remaining data (not reported in paper):
 
 First, overall match:
 
@@ -321,3 +429,57 @@ ggsave(plot = multi_plot, '../figures/per_language_barplots.pdf', width = 24, he
 ```
 
 This completes this analysis.
+
+## Plot of the world map:
+
+Load country-level data:
+
+```{r, message = FALSE, warning = FALSE}
+web_countries <- read_csv('../data/countries_map_online.csv')
+
+# From: https://developers.google.com/public-data/docs/canonical/countries_csv
+
+canonical <- read_csv('../data/countries.csv')
+```
+
+Merge the longitude and latitude info in there:
+
+```{r}
+web_countries <- left_join(web_countries, canonical,
+                           by = c('CountryCode' = 'country'))
+```
+
+Make a map:
+
+```{r, fig.width = 9, fig.height = 6}
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+world_p <- ggplot(world) +
+  geom_sf(size=0.2) +
+  coord_sf(xlim = c(-180, 180), ylim = c(-60, 80), datum=NA) +
+  geom_point(data = web_countries,
+             aes(x = longitude, y = latitude, group = NA),
+             alpha = 0.8, position = position_jitter(0.1), size = 3,
+             col = 'firebrick1') +
+  labs(title = "Countries from the participants of our web survey") +
+  theme_timo +
+  theme(
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    plot.margin = unit(c(0.1,0.4,-0.4,0.4),"cm"),
+    panel.spacing = unit(0, "lines"),
+    plot.title = element_text(size = 12))
+
+# Plot:
+
+world_p
+
+# Save:
+
+ggsave('../figures/Figure2_world_map.pdf', plot = world_p)
+```
+
+
+

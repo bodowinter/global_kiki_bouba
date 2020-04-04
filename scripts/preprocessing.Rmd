@@ -261,6 +261,20 @@ kiki_ppt$Family <- web[match(kiki_ppt$ID, web$ID), ]$Family
 kiki_ppt$Autotyp_Area <- web[match(kiki_ppt$ID, web$ID), ]$Autotyp_Area
 ```
 
+Merge L2 data in there:
+
+```{r, message = FALSE}
+L2 <- read_csv('../data/english_recoded.csv')
+kiki_ppt <- L2 %>% select(ID, English_MP) %>% right_join(kiki_ppt)
+```
+
+Make "NA" into "not reported" category:
+
+```{r}
+L2 <- mutate(L2,
+               English_MP = ifelse(is.na(English_MP), 'not reported', English_MP))
+```
+
 Write to file:
 
 ```{r}
@@ -377,11 +391,5 @@ Add the language information:
 
 ```{r}
 field_ppt$Language <- field[match(field_ppt$ID, field$ID), ]$Language
-```
-
-Write this:
-
-```{r}
-write_csv(field_ppt, '../data/field_experiment_cleaned.csv')
 ```
 

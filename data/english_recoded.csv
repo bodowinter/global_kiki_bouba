@@ -1,0 +1,790 @@
+Language,ID,L1,L2,EnglishL2,English_MP,Dialect,Sex,Age,Meaning,Team,UniqueItem,Rep,Choice,ACC,Name,ISO639.3,Script,Genus,Autotyp_Area,Continent,Longitude,Latitude,Family,category,subcategory,Animacy
+CN,CN_2091068,chinese,NA,NA,NA,hubei,F,36,eat,IL,IL_eat.wav,1,eat,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,action,action,animate
+CN,CN_2091465,chinese,NA,NA,NA,hunan,F,35,hide,IL,IL_hide.wav,4,dull,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,action,action,animate
+CN,CN_2091822,chinese,NA,NA,NA,NA,F,44,man,BW,BW_man.wav,3,this,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,people,animate
+CN,CN_2092617,chinese,NA,NA,NA,NA,F,39,big,MS,MS_big.wav,1,dull,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,property,adjective,animate
+CN,CN_2092884,chinese,NA,NA,NA,NA,M,44,fruit,GB,GB_fruit.wav,5,cook,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+CN,CN_2092990,chinese,NA,NA,NA,NA,M,45,knife,KD,KD_knife.wav,27,cut,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+CN,CN_2093224,chinese,NA,NA,NA,NA,F,47,man,BW,BW_man.wav,3,man,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,people,animate
+CN,CN_2094865,chinese,NA,NA,NA,NA,F,45,fruit,KD,KD_fruit.wav,2,fruit,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+CN,CN_2095358,chinese,NA,NA,NA,hubei,F,44,water,KD,KD_water.wav,4,water,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+CN,CN_2095401,chinese,NA,NA,NA,NA,M,46,snake,SU,SU_snake.wav,6,cut,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,animal,animate
+DK,DK_2142882,danish,NA,NA,NA,NA,F,29,cut,KR,KR_cut.wav,2,cut,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,action,action,animate
+DK,DK_2143723,danish,NA,NA,NA,NA,M,22,fruit,KD,KD_fruit.wav,3,fruit,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,inanimate,inanimate
+FA,FA_2086501,farsi,NA,NA,NA,NA,F,48,this,NC,NC_this.wav,2,water,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,property,demonstrative,animate
+FA,FA_2103865,farsi,NA,NA,NA,bakhtiari,M,31,one,NC,NC_one.wav,16,clapping,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,property,quantifier,animate
+FA,FA_2152327,farsi,NA,NA,NA,NA,M,21,this,IL,IL_this.wav,4,man,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,property,demonstrative,animate
+FR,FR_2098592,french,NA,NA,NA,NA,M,69,big,MS,MS_big.wav,3,sleep,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2098910,french,NA,NA,NA,NA,M,70,child,GB,GB_child.wav,3,this,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,people,animate
+FR,FR_2099016,french,NA,NA,NA,NA,F,33,one,NC,NC_one.wav,9,one,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,quantifier,animate
+FR,FR_2103186,french,NA,NA,NA,NA,F,31,tiger,KR,KR_tiger.wav,3,tiger,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,animal,animate
+FR,FR_2106696,french,NA,NA,NA,NA,M,50,hunt,IL,IL_hunt.wav,3,hunt,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+DE,DE_2006992,german,NA,NA,NA,NA,F,28,cook,KD,KD_cook.wav,3,rock,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+HU,HU_2114319,hungarian,NA,NA,NA,NA,F,66,one,BW,BW_one.wav,8,eat,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,quantifier,animate
+HU,HU_2115135,hungarian,NA,NA,NA,NA,F,48,pound,KR,KR_pound.wav,3,pound,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,action,action,animate
+HU,HU_2115509,hungarian,NA,NA,NA,NA,F,30,woman,KR,KR_woman.wav,3,cook,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,people,animate
+HU,HU_2116335,hungarian,NA,NA,NA,NA,F,56,meat,BW,BW_meat.wav,2,eat,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2117472,hungarian,NA,NA,NA,NA,F,57,man,KD,KD_man.wav,4,bad,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,people,animate
+HU,HU_2118967,hungarian,NA,NA,NA,NA,F,56,meat,KR,KR_meat.wav,8,meat,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2147124,hungarian,NA,NA,NA,NA,F,50,many,LJ,LJ_many.wav,3,gather,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,quantifier,animate
+HU,HU_2147763,hungarian,NA,NA,NA,kalocsa,F,84,one,KR,KR_one.wav,3,fire,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,quantifier,animate
+IT,IT_2076544,italian,NA,NA,NA,NA,F,19,knife,KD,KD_knife.wav,6,cook,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,inanimate,inanimate
+IT,IT_2081895,italian,NA,NA,NA,abruzzo,F,19,one,KR,KR_one.wav,9,gather,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,quantifier,animate
+JP,JP_2026184,japanese,NA,NA,NA,NA,M,28,knife,KD,KD_knife.wav,1,fire,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,inanimate,inanimate
+JP,JP_2027830,japanese,NA,NA,NA,gifu,F,36,cut,SU,SU_cut.wav,2,cut,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2040449,japanese,NA,NA,NA,"yanagawa, fukoka",F,21,many,GB,GB_many.wav,5,hide,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,quantifier,animate
+JP,JP_2040555,japanese,NA,NA,NA,NA,F,44,cut,SU,SU_cut.wav,3,bad,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2040873,japanese,NA,NA,NA,NA,F,31,water,IL,IL_water.wav,3,this,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,inanimate,inanimate
+JP,JP_2042623,japanese,NA,NA,NA,hiroshima,M,22,hunt,IL,IL_hunt.wav,5,hunt,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2042915,japanese,NA,NA,NA,NA,F,19,that,NC,NC_that.wav,2,woman,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,demonstrative,animate
+JP,JP_2043601,japanese,NA,NA,NA,NA,F,54,child,IL,IL_child.wav,1,child,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,people,animate
+JP,JP_2044816,japanese,NA,NA,NA,NA,F,18,sharp,NC,NC_sharp.wav,1,sharp,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,adjective,animate
+JP,JP_2045099,japanese,NA,NA,NA,NA,F,23,water,SU,SU_water.wav,1,water,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,inanimate,inanimate
+JP,JP_2045327,japanese,NA,NA,NA,NA,F,20,one,NC,NC_one.wav,4,one,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,quantifier,animate
+JP,JP_2046213,japanese,NA,NA,NA,toyama,F,21,meat,BW,BW_meat.wav,2,meat,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,inanimate,inanimate
+JP,JP_2046608,japanese,NA,NA,NA,NA,F,18,knife,KD,KD_knife.wav,8,knife,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,inanimate,inanimate
+JP,JP_2047655,japanese,NA,NA,NA,hokkaido,F,18,this,SU,SU_this.wav,5,big,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,demonstrative,animate
+JP,JP_2047879,japanese,NA,NA,NA,NA,F,18,small,NC,NC_small.wav,4,small,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,adjective,animate
+JP,JP_2048091,japanese,NA,NA,NA,NA,F,19,cook,KR,KR_cook.wav,2,one,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2048197,japanese,NA,NA,NA,NA,F,19,cut,GB,GB_cut.wav,1,cut,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2048409,japanese,NA,NA,NA,NA,F,19,dull,GB,GB_dull.wav,4,dull,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,adjective,animate
+JP,JP_2048515,japanese,NA,NA,NA,okoyama,F,18,child,IL,IL_child.wav,3,child,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,people,animate
+JP,JP_2048621,japanese,NA,NA,NA,NA,F,18,hide,IL,IL_hide.wav,1,snake,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2050804,japanese,NA,NA,NA,NA,F,18,that,NC,NC_that.wav,2,child,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,demonstrative,animate
+KR,KR_2193036,korean,NA,NA,NA,NA,F,33,one,NC,NC_one.wav,5,clapping,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,property,quantifier,animate
+PL,PL_2023817,polish,NA,NA,NA,NA,F,25,snake,SU,SU_snake.wav,4,snake,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,animal,animate
+PT,PT_2127456,portuguese,NA,NA,NA,NA,F,36,pound,KR,KR_pound.wav,4,pound,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2132703,portuguese,NA,NA,NA,NA,F,21,this,NC,NC_this.wav,14,woman,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,demonstrative,animate
+PT,PT_2132705,portuguese,NA,NA,NA,NA,F,21,eat,KD,KD_eat.wav,1,eat,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2132707,portuguese,NA,NA,NA,NA,F,22,many,KR,KR_many.wav,3,that,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,quantifier,animate
+PT,PT_2132709,portuguese,NA,NA,NA,NA,F,25,knife,KD,KD_knife.wav,2,woman,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+PT,PT_2132711,portuguese,NA,NA,NA,NA,F,21,rock,KR,KR_rock.wav,9,clapping,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+PT,PT_2132713,portuguese,NA,NA,NA,NA,F,21,fire,KD,KD_fire.wav,6,fire,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+PT,PT_2132715,portuguese,NA,NA,NA,NA,F,21,knife,BW,BW_knife.wav,7,hunt,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+PT,PT_2132718,portuguese,NA,NA,NA,NA,M,22,fruit,IL,IL_fruit.wav,3,fruit,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+PT,PT_2132737,portuguese,NA,NA,NA,NA,F,22,snake,NC,NC_snake.wav,1,fire,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,animal,animate
+PT,PT_2132809,portuguese,NA,NA,NA,NA,F,22,sleep,NC,NC_sleep.wav,2,sleep,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2132862,portuguese,NA,NA,NA,NA,M,21,deer,IL,IL_deer.wav,7,water,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,animal,animate
+PT,PT_2133628,portuguese,NA,NA,NA,NA,F,22,bad,IL,IL_bad.wav,2,bad,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2133765,portuguese,NA,NA,NA,NA,F,23,snake,NC,NC_snake.wav,2,snake,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,animal,animate
+PT,PT_2133859,portuguese,NA,NA,NA,NA,F,22,tiger,KR,KR_tiger.wav,2,dull,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,animal,animate
+PT,PT_2133956,portuguese,NA,NA,NA,NA,F,21,meat,IL,IL_meat.wav,1,meat,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+PT,PT_2134012,portuguese,NA,NA,NA,NA,F,22,woman,BW,BW_woman.wav,3,dull,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,people,animate
+PT,PT_2134018,portuguese,NA,NA,NA,NA,F,21,fire,GB,GB_fire.wav,3,fire,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+RO,RO_2049802,romanian ,NA,NA,NA,NA,F,39,woman,BW,BW_woman.wav,3,big,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,people,animate
+RU,RU_2067835,russian,NA,NA,NA,NA,F,46,deer,NC,NC_deer.wav,2,deer,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,animal,animate
+RU,RU_2070226,russian,NA,NA,NA,NA,M,27,gather,AB,AB_gather.wav,3,that,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+RU,RU_2065532,russian ,NA,NA,NA,NA,F,30,child,IL,IL_child.wav,4,dull,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,people,animate
+ES,ES_2108072,spanish,NA,NA,NA,NA,M,49,that,KD,KD_that.wav,8,cut,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,demonstrative,animate
+ES,ES_2108379,spanish ,NA,NA,NA,NA,M,20,knife,IL,IL_knife.wav,2,knife,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,noun,inanimate,inanimate
+SE,SE_2082177,swedish,NA,NA,NA,southern,F,42,that,NC,NC_that.wav,3,that,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,property,demonstrative,animate
+TH,TH_2110260,thai,NA,NA,NA,northeastern,F,39,many,KR,KR_many.wav,2,clapping,0,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,property,quantifier,animate
+TH,TH_2112187,thai,NA,NA,NA,suphan,F,29,gather,KR,KR_gather.wav,3,gather,1,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,action,action,animate
+TR,TR_2078008,turkish,NA,NA,NA,NA,F,28,tiger,BW,BW_tiger.wav,1,tiger,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,animal,animate
+TR,TR_2078114,turkish,NA,NA,NA,NA,F,27,bad,BW,BW_bad.wav,4,big,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2079958,turkish,NA,NA,NA,NA,F,22,one,KR,KR_one.wav,3,water,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,quantifier,animate
+TR,TR_2112699,turkish,NA,NA,NA,NA,M,21,water,SU,SU_water.wav,1,water,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+TR,TR_2112805,turkish,NA,NA,NA,NA,F,22,good,GB,GB_good.wav,3,knife,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2119813,turkish,NA,NA,NA,NA,F,21,man,IL,IL_man.wav,1,deer,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,people,animate
+TR,TR_2077280,turkish ,NA,NA,NA,NA,F,26,child,SU,SU_child.wav,2,child,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,people,animate
+TR,TR_2087035,turkish ,NA,NA,NA,NA,F,22,fire,GB,GB_fire.wav,4,cut,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+ZU,ZU_2057083,zulu,NA,NA,NA,NA,M,29,child,GB,GB_child.wav,7,child,1,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,people,animate
+ZU,ZU_2139344,zulu,NA,NA,NA,NA,F,21,pound,KR,KR_pound.wav,3,eat,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,action,action,animate
+AL,AL_2142091,albanian,"french, italian",FALSE,no,geg,F,47,rock,SU,SU_rock.wav,19,gather,0,Albanian,als,roman,IE,Europe,W and SW Eurasia,20,41,IE,noun,inanimate,inanimate
+AL,AL_2145197,albanian,italian,FALSE,no,NA,F,51,knife,KD,KD_knife.wav,5,knife,1,Albanian,als,roman,IE,Europe,W and SW Eurasia,20,41,IE,noun,inanimate,inanimate
+FR,FR_2101081,arabic,french,FALSE,no,NA,F,26,fire,GB,GB_fire.wav,3,snake,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+EE,EE_2051870,estonian,swedish,FALSE,no,NA,F,46,woman,IL,IL_woman.wav,2,woman,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,people,animate
+FR,FR_2099334,french,italian,FALSE,no,NA,F,69,meat,KR,KR_meat.wav,1,eat,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2113664,french,polish,FALSE,no,NA,F,25,fire,GB,GB_fire.wav,2,fire,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+GE,GE_2110923,georgian,"german, russian",FALSE,no,imereti,M,46,hide,IL,IL_hide.wav,6,bad,0,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,action,action,animate
+GE,GE_2148242,georgian,"german, russian",FALSE,no,NA,M,46,meat,BW,BW_meat.wav,2,cook,0,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,noun,inanimate,inanimate
+GR,GR_2041819,greek,german,FALSE,no,NA,F,43,cook,KR,KR_cook.wav,2,snake,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,action,action,animate
+HU,HU_2116551,hungarian,german,FALSE,no,NA,F,64,water,KD,KD_water.wav,5,meat,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2117798,hungarian,german,FALSE,no,NA,F,44,good,NC,NC_good.wav,3,good,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,adjective,animate
+HU,HU_2117904,hungarian,russian,FALSE,no,NA,F,61,good,NC,NC_good.wav,2,good,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,adjective,animate
+TR,TR_2113042,kurdish,turkish,FALSE,no,NA,M,27,cook,KR,KR_cook.wav,4,child,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,action,action,animate
+PL,PL_2011225,polish,german,FALSE,no,NA,F,29,tiger,BW,BW_tiger.wav,1,man,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,animal,animate
+PL,PL_2060855,polish,german ,FALSE,no,NA,F,33,fruit,IL,IL_fruit.wav,3,deer,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+GE,GE_2131090,russian,"georgian, greek",FALSE,no,NA,F,69,fruit,KD,KD_fruit.wav,2,meat,0,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,noun,inanimate,inanimate
+RU,RU_2069776,russian ,macedonian,FALSE,no,NA,F,26,man,IL,IL_man.wav,2,man,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,people,animate
+RU,RU_2064842,"russian, belarusian","german, polish",FALSE,no,NA,F,45,eat,IL,IL_eat.wav,1,eat,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+ES,ES_2102937,spanish,french,FALSE,no,NA,F,54,hunt,IL,IL_hunt.wav,2,hunt,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,action,action,animate
+ES,ES_2065961,spanish,"french, portuguese",FALSE,no,NA,F,65,tiger,KR,KR_tiger.wav,2,sharp,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,noun,animal,animate
+ZU,ZU_2106921,zulu,german,FALSE,no,NA,F,29,snake,SU,SU_snake.wav,2,snake,1,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,animal,animate
+AL,AL_2110262,albanian,"english, french",TRUE,L2,"tosk, standard",F,41,sharp,NC,NC_sharp.wav,3,sharp,1,Albanian,als,roman,IE,Europe,W and SW Eurasia,20,41,IE,property,adjective,animate
+AL,AL_2144707,albanian,"italian, french, german, english",TRUE,L2,NA,F,60,fruit,GB,GB_fruit.wav,4,water,0,Albanian,als,roman,IE,Europe,W and SW Eurasia,20,41,IE,noun,inanimate,inanimate
+AL,AL_2200030,albanian,"serbian,english",TRUE,L2,NA,F,31,rock,KR,KR_rock.wav,6,rock,1,Albanian,als,roman,IE,Europe,W and SW Eurasia,20,41,IE,noun,inanimate,inanimate
+AL,AL_2137891,albanian ,"english, italian, french ",TRUE,L2,NA,M,31,snake,NC,NC_snake.wav,1,snake,1,Albanian,als,roman,IE,Europe,W and SW Eurasia,20,41,IE,noun,animal,animate
+AL,AL_2145029,albanianja,"english, italian, french",TRUE,L2,NA,F,46,knife,BW,BW_knife.wav,3,knife,1,Albanian,als,roman,IE,Europe,W and SW Eurasia,20,41,IE,noun,inanimate,inanimate
+EN,EN_2031824,arabic,english,TRUE,L2,NA,M,22,big,BW,BW_big.wav,14,child,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+FR,FR_2103080,arabic,"english, french",TRUE,L2,NA,F,28,that,KD,KD_that.wav,2,that,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,demonstrative,animate
+FR,FR_2100642,arabic,"french, english",TRUE,L2,NA,M,27,bad,BW,BW_bad.wav,4,bad,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+EN,EN_2044230,arabic ,"english, russian, spanish ",TRUE,L2,levant ,M,35,cut,GB,GB_cut.wav,4,this,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+AM,AM_2131488,armenian,"english, bulgarian, russian, german",TRUE,L2,NA,F,26,that,BW,BW_that.wav,5,sharp,0,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,property,demonstrative,animate
+AM,AM_2132352,armenian,"english, italian, russian",TRUE,L2,gyumri,F,21,woman,IL,IL_woman.wav,3,sleep,0,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,noun,people,animate
+AM,AM_2131367,armenian,"english, russian, german",TRUE,L2,NA,M,27,meat,BW,BW_meat.wav,2,bad,0,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,noun,inanimate,inanimate
+AM,AM_2129759,armenian,"english, russian, german, spanish",TRUE,L2,NA,F,28,child,IL,IL_child.wav,2,child,1,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,noun,people,animate
+AM,AM_2135205,armenian,"english, russian, spanish",TRUE,L2,"gyumri, mastara",F,23,hide,NC,NC_hide.wav,7,pound,0,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,action,action,animate
+AM,AM_2090125,armenian,"russian, english",TRUE,L2,sisian,F,27,one,BW,BW_one.wav,5,one,1,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,property,quantifier,animate
+AM,AM_2130356,armenian,"russian, english",TRUE,L2,NA,F,35,gather,KR,KR_gather.wav,3,cut,0,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,action,action,animate
+AM,AM_2135714,armenian,"russian, english",TRUE,L2,NA,F,24,dull,BW,BW_dull.wav,2,big,0,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,property,adjective,animate
+AM,AM_2113553,armenian,"russian, english ",TRUE,L2,NA,F,18,hide,NC,NC_hide.wav,3,hide,1,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,action,action,animate
+AM,AM_2110154,armenian,"russian, english, french",TRUE,L2,gyumri,F,27,eat,KD,KD_eat.wav,3,eat,1,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,action,action,animate
+AM,AM_2132050,armenian,"russian, english, german",TRUE,L2,NA,F,21,fire,GB,GB_fire.wav,2,fire,1,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,noun,inanimate,inanimate
+DE,DE_2074160,armenian,"russian, english, german",TRUE,L2,NA,F,30,cook,GB,GB_cook.wav,5,cook,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+AM,AM_2089819,armenian,"russian, english, german ",TRUE,L2,NA,F,25,gather,GB,GB_gather.wav,5,gather,1,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,action,action,animate
+AM,AM_2090231,armenian,"russian, english, german, japanese",TRUE,L2,ararat,F,18,cook,KR,KR_cook.wav,1,hide,0,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,action,action,animate
+AM,AM_2135059,armenian ,"english,russian,spanish",TRUE,L2,karno,F,23,woman,BW,BW_woman.wav,1,bad,0,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,noun,people,animate
+DE,DE_2022038,austriangerman,"english, croatian",TRUE,L2,graz,F,28,fire,IL,IL_fire.wav,2,water,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+CN,CN_2090343,chinese,english,TRUE,L2,NA,F,39,deer,NC,NC_deer.wav,3,sleep,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,animal,animate
+CN,CN_2090520,chinese,english,TRUE,L2,jingzhou,F,43,gather,AB,AB_gather.wav,4,water,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,action,action,animate
+CN,CN_2091116,chinese,english,TRUE,L2,wuhan,F,44,rock,IL,IL_rock.wav,3,rock,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+CN,CN_2091417,chinese,english,TRUE,L2,"hubei, guangshui",F,44,dull,IL,IL_dull.wav,4,hide,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,property,adjective,animate
+CN,CN_2092150,chinese,english,TRUE,L2,danjiangkou,M,46,knife,IL,IL_knife.wav,1,tiger,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+CN,CN_2093540,chinese,english,TRUE,L2,hebei,F,47,gather,AB,AB_gather.wav,2,gather,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,action,action,animate
+CN,CN_2093752,chinese,english,TRUE,L2,NA,F,20,that,KD,KD_that.wav,3,that,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,property,demonstrative,animate
+CN,CN_2094119,chinese,english,TRUE,L2,NA,F,23,woman,KR,KR_woman.wav,4,woman,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,people,animate
+CN,CN_2094225,chinese,english,TRUE,L2,zhuang,F,47,pound,IL,IL_pound.wav,6,pound,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,action,action,animate
+CN,CN_2094331,chinese,english,TRUE,L2,"guangxi, guangdong",F,20,good,IL,IL_good.wav,6,good,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,property,adjective,animate
+CN,CN_2094542,chinese,english,TRUE,L2,NA,F,37,knife,KD,KD_knife.wav,2,knife,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+CN,CN_2096079,chinese,english,TRUE,L2,yulin,F,20,child,IL,IL_child.wav,1,child,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,people,animate
+CN,CN_2096696,chinese,english,TRUE,L2,guangxi,F,23,small,IL,IL_small.wav,1,small,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,property,adjective,animate
+CN,CN_2096717,chinese,english,TRUE,L2,"guangxi, cangzhou",F,20,small,TM,TM_small.wav,31,pound,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,property,adjective,animate
+CN,CN_2096896,chinese,english,TRUE,L2,guigang,F,20,gather,GB,GB_gather.wav,2,clapping,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,action,action,animate
+CN,CN_2097291,chinese,english,TRUE,L2,"guangxi, hechi",F,18,fruit,GB,GB_fruit.wav,4,clapping,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+CN,CN_2099532,chinese,english,TRUE,L2,guilin,F,22,bad,GB,GB_bad.wav,10,gather,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,property,adjective,animate
+EN,EN_2025215,chinese,english,TRUE,L2,NA,M,29,sharp,KD,KD_sharp.wav,5,snake,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+DE,DE_2021951,chinese,"english, german",TRUE,L2,bavarian,F,28,deer,IL,IL_deer.wav,1,gather,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,animal,animate
+JP,JP_2027609,chinese,"english, japanese",TRUE,L2,NA,M,25,cook,KD,KD_cook.wav,2,bad,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+CN,CN_2093858,chinese,english，spanish,TRUE,L2,shanghai,F,21,knife,KD,KD_knife.wav,2,cut,0,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+DK,DK_2102760,danish,english,TRUE,L2,funen,F,32,eat,IL,IL_eat.wav,2,eat,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,action,action,animate
+DK,DK_2136830,danish,english,TRUE,L2,"funen, odense",M,33,sharp,NC,NC_sharp.wav,3,bad,0,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,property,adjective,animate
+DK,DK_2143829,danish,english,TRUE,L2,NA,M,27,water,KD,KD_water.wav,1,water,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,inanimate,inanimate
+DK,DK_2142486,danish,"english, french",TRUE,L2,NA,M,21,woman,BW,BW_woman.wav,8,good,0,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,people,animate
+DK,DK_2137122,danish,"english, german",TRUE,L2,NA,F,30,good,GB,GB_good.wav,2,good,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,property,adjective,animate
+DK,DK_2143010,danish,"english, german",TRUE,L2,"aarhus, central jutland",M,24,meat,KR,KR_meat.wav,1,eat,0,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,inanimate,inanimate
+DK,DK_2143615,danish,"english, german",TRUE,L2,NA,F,20,tiger,KR,KR_tiger.wav,3,tiger,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,animal,animate
+DK,DK_2144894,danish,"english, german",TRUE,L2,NA,F,25,snake,SU,SU_snake.wav,2,snake,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,animal,animate
+DK,DK_2149901,danish,"english, german",TRUE,L2,NA,M,25,knife,IL,IL_knife.wav,1,knife,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,inanimate,inanimate
+DK,DK_2142540,danish,"english, german, dutch",TRUE,L2,jutland ,F,22,deer,IL,IL_deer.wav,1,deer,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,animal,animate
+DK,DK_2102868,danish,"english, german, french",TRUE,L2,funen,F,29,fire,IL,IL_fire.wav,2,fire,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,inanimate,inanimate
+DK,DK_2143457,danish,"english, german, french",TRUE,L2,"jutland, salling",F,24,meat,BW,BW_meat.wav,2,meat,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,inanimate,inanimate
+DK,DK_2147661,danish,"english, german, french",TRUE,L2,NA,M,45,meat,BW,BW_meat.wav,3,meat,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,inanimate,inanimate
+DK,DK_2149822,danish,"english, german, spanish, portuguese, russian, dutch",TRUE,L2,NA,M,54,gather,GB,GB_gather.wav,3,knife,0,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,action,action,animate
+DK,DK_2144114,danish,"english, spanish",TRUE,L2,jutland,F,24,snake,NC,NC_snake.wav,1,snake,1,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,noun,animal,animate
+DK,DK_2143222,danish,"german, english",TRUE,L2,NA,F,22,this,SU,SU_this.wav,5,bad,0,Danish,dan,roman,IE,Europe,W and SW Eurasia,10,56,IE,property,demonstrative,animate
+DE,DE_2010577,dutch,"english, german",TRUE,L2,NA,F,56,hide,NC,NC_hide.wav,2,sleep,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+EN,EN_2014133,dutch,"english, german, italian",TRUE,L2,limburgian,M,58,hunt,BW,BW_hunt.wav,1,rock,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2040072,dutch,"english, hebrew, german, french",TRUE,L2,NA,F,33,big,BW,BW_big.wav,1,big,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2029434,english,NA,NA,L1,NA,M,23,fire,KD,KD_fire.wav,1,fire,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2029682,english,NA,NA,L1,NA,M,33,good,NC,NC_good.wav,2,good,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2030058,english,NA,NA,L1,NA,F,44,bad,IL,IL_bad.wav,2,bad,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2031862,english,NA,NA,L1,NA,M,37,cook,KR,KR_cook.wav,2,water,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2032308,english,NA,NA,L1,trinidadian english,F,28,fruit,IL,IL_fruit.wav,1,eat,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2032799,english,NA,NA,L1,british,M,25,dull,IL,IL_dull.wav,4,dull,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2033881,english,NA,NA,L1,NA,M,24,sleep,KD,KD_sleep.wav,2,sleep,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2034548,english,NA,NA,L1,NA,F,48,good,NC,NC_good.wav,2,woman,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2039215,english,NA,NA,L1,australian ,M,22,pound,IL,IL_pound.wav,1,pound,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2049534,english,NA,NA,L1,NA,M,50,man,BW,BW_man.wav,12,deer,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,people,animate
+EN,EN_2035441,english,a little bit german ,FALSE,L1,NA,F,25,man,KD,KD_man.wav,1,pound,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,people,animate
+EN,EN_2015517,english,"a little bit german, a little french",FALSE,L1,midwestern us,F,52,big,GB,GB_big.wav,1,big,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2030623,english,"asl, french",FALSE,L1,NA,F,47,hide,NC,NC_hide.wav,2,water,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2009682,english,french,FALSE,L1,NA,F,24,fire,IL,IL_fire.wav,2,fire,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2029222,english,french,FALSE,L1,NA,M,39,that,BW,BW_that.wav,2,that,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,demonstrative,animate
+EN,EN_2029922,english,french,FALSE,L1,NA,F,31,one,BW,BW_one.wav,2,good,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,quantifier,animate
+EN,EN_2034937,english,french,FALSE,L1,western canadian,M,25,pound,KR,KR_pound.wav,6,many,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2038609,english,french,FALSE,L1,NA,F,55,knife,KD,KD_knife.wav,3,sharp,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2056487,english,french,FALSE,L1,NA,F,21,hide,NC,NC_hide.wav,2,sharp,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+FR,FR_2102295,english,french,FALSE,L1,NA,M,23,small,IL,IL_small.wav,4,that,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+EN,EN_2012604,english,"french, a little bit german, a little bit japanese",FALSE,L1,british,F,25,snake,SU,SU_snake.wav,1,snake,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+EN,EN_2009360,english,"french, german",FALSE,L1,NA,F,32,small,NC,NC_small.wav,3,small,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2031265,english,"french, italian",FALSE,L1,NA,F,37,pound,IL,IL_pound.wav,1,pound,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2030330,english,german,FALSE,L1,NA,M,23,sharp,NC,NC_sharp.wav,2,sharp,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2030515,english,german,FALSE,L1,NA,M,21,cut,SU,SU_cut.wav,3,snake,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2011604,english,"german, chinese, italian",FALSE,L1,NA,M,30,hide,IL,IL_hide.wav,2,hide,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+EN,EN_2007249,english,"german, dutch",FALSE,L1,hiberno-english,M,56,tiger,NC,NC_tiger.wav,2,tiger,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+EN,EN_2031667,english,"latin, a little bit spanish",FALSE,L1,NA,F,43,fruit,GB,GB_fruit.wav,2,fruit,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2035653,english,"latin, ancient greek, german",FALSE,L1,NA,F,25,meat,IL,IL_meat.wav,1,eat,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2027185,english,nepali,FALSE,L1,australian ,F,33,knife,KD,KD_knife.wav,2,sharp,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2032689,english,spanish,FALSE,L1,NA,M,26,tiger,KR,KR_tiger.wav,3,tiger,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+EN,EN_2029700,english,"spanish, a little bit dutch ",FALSE,L1,NA,F,24,one,BW,BW_one.wav,2,one,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,quantifier,animate
+EN,EN_2032142,english,"spanish, a little bit korean",FALSE,L1,NA,F,23,tiger,KR,KR_tiger.wav,2,tiger,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+EN,EN_2029328,english,"spanish, german, asl",FALSE,L1,upper midwestern us,M,24,sharp,KD,KD_sharp.wav,3,water,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_2029531,english,"spanish, hebrew",FALSE,L1,american,F,39,tiger,BW,BW_tiger.wav,1,tiger,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+EN,EN_2031526,english,"turkish, spanish",FALSE,L1,NA,F,24,fruit,IL,IL_fruit.wav,1,fruit,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2075768,english,vietnamese,FALSE,L1,NA,F,22,meat,KR,KR_meat.wav,1,tiger,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+EN,EN_2033631,español,english,TRUE,L2,NA,M,33,snake,BW,BW_snake.wav,3,snake,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+PT,PT_2121716,esperanto,"english, esperanto, french",TRUE,L2,NA,M,25,child,GB,GB_child.wav,1,eat,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,people,animate
+EE,EE_2057944,estonian,english,TRUE,L2,NA,F,32,dull,BW,BW_dull.wav,3,eat,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+EE,EE_2093288,estonian,"english, a little bit german, a little bit italian, a little bit russian ",TRUE,L2,NA,F,28,big,BW,BW_big.wav,2,man,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+EE,EE_2055693,estonian,"english, finnish, danish",TRUE,L2,NA,F,45,tiger,KR,KR_tiger.wav,3,tiger,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,animal,animate
+EE,EE_2059961,estonian,"english, finnish, french, russian",TRUE,L2,mulgi,F,34,snake,SU,SU_snake.wav,5,gather,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,animal,animate
+EN,EN_2043021,estonian,"english, finnish, french, russian",TRUE,L2,NA,M,38,big,MS,MS_big.wav,1,big,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EE,EE_2062405,estonian,"english, finnish, hungarian",TRUE,L2,NA,F,22,sharp,IL,IL_sharp.wav,4,sharp,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+EE,EE_2060175,estonian,"english, finnish, russian, german, swedish, italian, spanish, french",TRUE,L2,NA,F,47,meat,KR,KR_meat.wav,3,many,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2054453,estonian,"english, finnish, russian, hungarian, german, spanish",TRUE,L2,NA,F,29,meat,IL,IL_meat.wav,2,eat,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2058050,estonian,"english, finnish, swedish",TRUE,L2,NA,F,29,water,SU,SU_water.wav,3,water,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2067135,estonian,"english, french, finnish",TRUE,L2,NA,F,22,woman,IL,IL_woman.wav,3,sleep,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,people,animate
+EE,EE_2059148,estonian,"english, french, russian, finnish",TRUE,L2,NA,F,28,meat,IL,IL_meat.wav,2,meat,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2063434,estonian,"english, german, french, russian",TRUE,L2,NA,F,53,that,KD,KD_that.wav,2,sharp,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,demonstrative,animate
+EE,EE_2058368,estonian,"english, german, latin",TRUE,L2,NA,M,33,good,GB,GB_good.wav,1,water,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+EE,EE_2061100,estonian,"english, german, russian, french",TRUE,L2,NA,F,39,child,IL,IL_child.wav,2,child,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,people,animate
+EE,EE_2057689,estonian,"english, italian, russian",TRUE,L2,NA,F,37,one,NC,NC_one.wav,5,one,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,quantifier,animate
+EE,EE_2056156,estonian,"english, russian",TRUE,L2,NA,M,29,fruit,KD,KD_fruit.wav,1,cook,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2059273,estonian,"english, russian",TRUE,L2,NA,F,49,rock,SU,SU_rock.wav,3,rock,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2059514,estonian,"english, russian",TRUE,L2,"tartu, voro",F,25,deer,KD,KD_deer.wav,2,deer,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,animal,animate
+EE,EE_2062178,estonian,"english, russian, finnish",TRUE,L2,NA,F,30,sharp,NC,NC_sharp.wav,2,water,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+EE,EE_2057608,estonian,"english, russian, german",TRUE,L2,NA,F,45,fruit,GB,GB_fruit.wav,9,fruit,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2057838,estonian,"english, russian, german",TRUE,L2,NA,F,33,knife,KD,KD_knife.wav,4,hunt,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2058541,estonian,"english, russian, german, finnish",TRUE,L2,NA,F,41,big,BW,BW_big.wav,2,big,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+EE,EE_2061330,estonian,"english, russian, german, finnish",TRUE,L2,NA,F,39,sleep,KD,KD_sleep.wav,1,sleep,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+EE,EE_2058528,estonian,"english, russian, spanish, german",TRUE,L2,NA,F,50,one,NC,NC_one.wav,6,cut,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,quantifier,animate
+EN,EN_2043774,estonian,"english, swedish, dutch, german, russian",TRUE,L2,NA,F,46,deer,KD,KD_deer.wav,2,deer,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+EE,EE_2056593,estonian,"french, english, italian, russian",TRUE,L2,NA,F,43,many,GB,GB_many.wav,2,tiger,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,quantifier,animate
+EE,EE_2056747,estonian,"german, english, finnish, hungarian, russian, swedish",TRUE,L2,NA,F,26,eat,KD,KD_eat.wav,1,eat,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+EE,EE_2058156,estonian,"german, english, hungarian, russian",TRUE,L2,NA,F,45,cook,KR,KR_cook.wav,1,snake,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+EE,EE_2058608,estonian,"german, english, norwegian",TRUE,L2,NA,F,27,sleep,NC,NC_sleep.wav,2,sleep,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+EE,EE_2063750,estonian,"german, english, russian",TRUE,L2,NA,F,49,many,LJ,LJ_many.wav,2,child,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,quantifier,animate
+EE,EE_2056947,estonian,"russian, english",TRUE,L2,NA,F,51,eat,KD,KD_eat.wav,3,eat,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+EE,EE_2063940,estonian,"russian, english, finnish",TRUE,L2,NA,F,47,sharp,NC,NC_sharp.wav,1,woman,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+EE,EE_2058898,estonian,"russian, english, finnish, german",TRUE,L2,voro,F,56,fruit,GB,GB_fruit.wav,2,eat,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2061228,estonian,"russian, english, german, finnish, a little bit polish, a little bit spanish",TRUE,L2,voro,F,47,pound,IL,IL_pound.wav,1,pound,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+EE,EE_2057308,estonian,"russian, german, english, french",TRUE,L2,NA,F,55,small,TM,TM_small.wav,2,fruit,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+EE,EE_2057447,estonian,"spanish, english, russian",TRUE,L2,NA,F,45,deer,IL,IL_deer.wav,3,deer,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,animal,animate
+EE,EE_2071211,estonian,"spanish, english, russian, italian, french, finnish",TRUE,L2,NA,F,35,rock,KR,KR_rock.wav,4,rock,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,noun,inanimate,inanimate
+EE,EE_2059608,estonian,"swedish, german, english, russian",TRUE,L2,NA,F,40,sleep,NC,NC_sleep.wav,1,sleep,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+EE,EE_2109632,estonian ,"english, german  ",TRUE,L2,NA,F,19,one,NC,NC_one.wav,3,clapping,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,quantifier,animate
+EE,EE_2056161,estonian ,"english, german, russian, latvian",TRUE,L2,hiiu,F,28,many,KR,KR_many.wav,2,this,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,quantifier,animate
+FA,FA_2068709,farsi,english,TRUE,L2,NA,F,24,pound,KR,KR_pound.wav,2,dull,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,action,action,animate
+FA,FA_2103514,farsi,english,TRUE,L2,NA,F,36,gather,KR,KR_gather.wav,4,pound,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,action,action,animate
+FA,FA_2105292,farsi,english,TRUE,L2,NA,M,38,woman,BW,BW_woman.wav,3,man,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,noun,people,animate
+FA,FA_2120082,farsi,english,TRUE,L2,tehrani,F,31,hide,NC,NC_hide.wav,6,cook,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,action,action,animate
+FA,FA_2150878,farsi,english,TRUE,L2,NA,M,28,snake,NC,NC_snake.wav,5,fire,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,noun,animal,animate
+FA,FA_2151101,farsi,english,TRUE,L2,NA,F,26,sleep,NC,NC_sleep.wav,3,sleep,1,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,action,action,animate
+FA,FA_2151146,farsi,english,TRUE,L2,khorasani,M,26,deer,KD,KD_deer.wav,2,deer,1,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,noun,animal,animate
+FA,FA_2151452,farsi,english,TRUE,L2,gilaki,F,24,rock,SU,SU_rock.wav,3,this,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,noun,inanimate,inanimate
+FA,FA_2151502,farsi,english,TRUE,L2,NA,F,19,cook,KR,KR_cook.wav,6,snake,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,action,action,animate
+FA,FA_2152433,farsi,english,TRUE,L2,azerbaijani,M,26,meat,BW,BW_meat.wav,4,cut,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,noun,inanimate,inanimate
+FA,FA_2150860,farsi,"english, arabic, turkish",TRUE,L2,bakhtiari,F,30,small,NC,NC_small.wav,5,small,1,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,property,adjective,animate
+FA,FA_2043490,farsi,"english, french",TRUE,L2,NA,F,52,cook,KD,KD_cook.wav,6,eat,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,action,action,animate
+FA,FA_2151685,farsi,"english, french",TRUE,L2,NA,M,31,this,SU,SU_this.wav,4,bad,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,property,demonstrative,animate
+FA,FA_2104128,farsi,"english, german",TRUE,L2,NA,F,26,hunt,GB,GB_hunt.wav,2,hunt,1,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,action,action,animate
+FA,FA_2152540,farsi,"english, turkish",TRUE,L2,NA,M,32,fire,GB,GB_fire.wav,7,hunt,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,noun,inanimate,inanimate
+FA,FA_2142305,farsi,"english,french",TRUE,L2,NA,M,31,this,SU,SU_this.wav,2,child,0,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,property,demonstrative,animate
+FA,FA_2147376,farsi,"spanish, english",TRUE,L2,NA,F,31,gather,KR,KR_gather.wav,2,gather,1,Farsi,fas,different,IE,Greater Mesopotamia,W and SW Eurasia,54,32,IE,action,action,animate
+SE,SE_2127135,finnish,"english, german",TRUE,L2,NA,F,51,fire,KD,KD_fire.wav,2,sleep,0,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,inanimate,inanimate
+EN,EN_2067029,"finnish, estonian","english, german, saami",TRUE,L2,NA,F,26,deer,IL,IL_deer.wav,3,deer,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+FR,FR_2108701,french,"breton, english, spanish",TRUE,L2,NA,F,63,rock,KR,KR_rock.wav,4,water,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2074614,french,english,TRUE,L2,NA,F,40,many,LJ,LJ_many.wav,4,many,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,quantifier,animate
+FR,FR_2088693,french,english,TRUE,L2,NA,F,25,hunt,BW,BW_hunt.wav,2,hunt,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+FR,FR_2088799,french,english,TRUE,L2,NA,F,39,that,KD,KD_that.wav,2,cut,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,demonstrative,animate
+FR,FR_2099122,french,english,TRUE,L2,NA,F,57,dull,BW,BW_dull.wav,4,one,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2100536,french,english,TRUE,L2,NA,M,38,gather,GB,GB_gather.wav,2,cut,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+FR,FR_2100701,french,english,TRUE,L2,NA,M,41,tiger,BW,BW_tiger.wav,3,tiger,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,animal,animate
+FR,FR_2100714,french,english,TRUE,L2,NA,F,56,small,IL,IL_small.wav,5,deer,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2100971,french,english,TRUE,L2,NA,M,30,sharp,KD,KD_sharp.wav,5,hunt,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2101720,french,english,TRUE,L2,NA,F,59,man,KD,KD_man.wav,2,hunt,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,people,animate
+FR,FR_2101747,french,english,TRUE,L2,NA,F,24,cook,KD,KD_cook.wav,3,fire,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+FR,FR_2102035,french,english,TRUE,L2,NA,F,72,meat,BW,BW_meat.wav,3,meat,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2102421,french,english,TRUE,L2,NA,M,52,hide,NC,NC_hide.wav,2,hide,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+FR,FR_2102527,french,english,TRUE,L2,NA,F,24,child,GB,GB_child.wav,3,child,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,people,animate
+FR,FR_2104340,french,english,TRUE,L2,NA,M,22,sleep,NC,NC_sleep.wav,1,sleep,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+FR,FR_2106314,french,english,TRUE,L2,NA,M,25,good,IL,IL_good.wav,1,big,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2106623,french,english,TRUE,L2,NA,M,59,meat,KR,KR_meat.wav,2,tiger,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2112372,french,english,TRUE,L2,NA,F,35,fire,GB,GB_fire.wav,2,fire,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2123564,french,english,TRUE,L2,NA,F,19,deer,KD,KD_deer.wav,2,cut,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,animal,animate
+FR,FR_2103653,french,english spanish,TRUE,L2,NA,F,22,good,IL,IL_good.wav,4,good,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2107540,french,"english, a little bit german",TRUE,L2,NA,F,25,gather,GB,GB_gather.wav,1,this,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+FR,FR_2093434,french,"english, a little bit italian, a little bit german, a little bit spanish ",TRUE,L2,NA,F,32,many,GB,GB_many.wav,2,cook,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,quantifier,animate
+FR,FR_2119495,french,"english, a little bit italian, a little bit spanish",TRUE,L2,NA,M,40,sharp,IL,IL_sharp.wav,5,sleep,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2102654,french,"english, a little bit japanese",TRUE,L2,NA,M,35,man,IL,IL_man.wav,1,many,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,people,animate
+FR,FR_2103402,french,"english, german",TRUE,L2,NA,M,28,fire,IL,IL_fire.wav,4,fire,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2113913,french,"english, german",TRUE,L2,NA,F,51,one,KR,KR_one.wav,2,one,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,quantifier,animate
+FR,FR_2098612,french,"english, german, a little bit indonesian",TRUE,L2,NA,F,39,eat,KD,KD_eat.wav,1,eat,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+FR,FR_2107646,french,"english, italian, spanish",TRUE,L2,NA,F,28,good,GB,GB_good.wav,4,good,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2107244,french,"english, spanish",TRUE,L2,NA,F,47,fire,GB,GB_fire.wav,3,fire,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2107395,french,"english, spanish, italian",TRUE,L2,NA,F,52,gather,AB,AB_gather.wav,2,gather,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,action,action,animate
+FR,FR_2107027,french,"english,spanish,italian, german",TRUE,L2,NA,F,73,woman,BW,BW_woman.wav,2,water,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,people,animate
+FR,FR_2098048,french,"german, english",TRUE,L2,NA,F,58,small,TM,TM_small.wav,2,hide,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2104234,french,"italian, english",TRUE,L2,NA,F,21,woman,KR,KR_woman.wav,3,man,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,people,animate
+FR,FR_2106427,french,"polish, spanish, english",TRUE,L2,NA,F,26,deer,KD,KD_deer.wav,4,bad,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,animal,animate
+FR,FR_2098380,french ,"english, german",TRUE,L2,NA,F,39,big,MS,MS_big.wav,4,big,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+FR,FR_2108947,french ,"english, italian",TRUE,L2,NA,F,50,water,SU,SU_water.wav,4,water,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2099642,french ,"english, spanish, german ",TRUE,L2,NA,F,46,tiger,NC,NC_tiger.wav,4,knife,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,animal,animate
+FR,FR_2120324,"french, spanish",english,TRUE,L2,NA,F,20,one,KR,KR_one.wav,5,one,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,quantifier,animate
+GE,GE_2145379,georgian,"english, russian",TRUE,L2,NA,M,33,rock,IL,IL_rock.wav,2,pound,0,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,noun,inanimate,inanimate
+GE,GE_2199787,georgian,"english, russian",TRUE,L2,NA,F,29,good,NC,NC_good.wav,1,good,1,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,property,adjective,animate
+GE,GE_2113770,georgian,"english, russian, greek",TRUE,L2,NA,F,42,hide,KD,KD_hide.wav,9,hide,1,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,action,action,animate
+GE,GE_2130542,georgian,"english, russian, greek, german",TRUE,L2,NA,F,39,many,LJ,LJ_many.wav,1,this,0,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,property,quantifier,animate
+GE,GE_2111129,georgian,"english, turkish, french",TRUE,L2,adjaran,F,25,gather,AB,AB_gather.wav,4,hunt,0,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,action,action,animate
+GE,GE_2111235,georgian,"german, english, russian",TRUE,L2,NA,F,37,this,SU,SU_this.wav,12,this,1,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,property,demonstrative,animate
+GE,GE_2131086,georgian,"russian, english, greek",TRUE,L2,NA,F,42,eat,KD,KD_eat.wav,1,eat,1,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,action,action,animate
+GE,GE_2111237,"georgian, mingrelian","english, russian",TRUE,L2,NA,F,32,woman,IL,IL_woman.wav,3,snake,0,Georgian,kat,different,Kartvelian,Greater Mesopotamia,W and SW Eurasia,44,42,other,noun,people,animate
+DE,DE_2002066,german,english,TRUE,L2,NA,F,61,small,TM,TM_small.wav,2,many,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2003687,german,english,TRUE,L2,NA,F,48,one,KR,KR_one.wav,2,one,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,quantifier,animate
+DE,DE_2007257,german,english,TRUE,L2,NA,F,37,this,NC,NC_this.wav,2,good,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,demonstrative,animate
+DE,DE_2009902,german,english,TRUE,L2,palatine,M,55,rock,KR,KR_rock.wav,3,that,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2010153,german,english,TRUE,L2,berlin,F,28,small,IL,IL_small.wav,3,small,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2016253,german,english,TRUE,L2,NA,F,32,fire,IL,IL_fire.wav,1,fire,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2018651,german,english,TRUE,L2,NA,F,48,woman,IL,IL_woman.wav,1,many,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,people,animate
+DE,DE_2021892,german,english,TRUE,L2,NA,F,33,good,NC,NC_good.wav,1,cook,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2025321,german,english,TRUE,L2,swabian,F,45,snake,BW,BW_snake.wav,4,big,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,animal,animate
+DE,DE_2026290,german,english,TRUE,L2,NA,M,48,snake,NC,NC_snake.wav,2,snake,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,animal,animate
+DE,DE_2037056,german,english,TRUE,L2,NA,F,32,tiger,NC,NC_tiger.wav,1,deer,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,animal,animate
+DE,DE_2043986,german,english,TRUE,L2,NA,F,42,that,KD,KD_that.wav,2,that,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,demonstrative,animate
+DE,DE_2055195,german,english,TRUE,L2,NA,F,25,fruit,IL,IL_fruit.wav,2,fruit,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2117137,german,english,TRUE,L2,NA,F,30,water,SU,SU_water.wav,3,water,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+EN,EN_2044492,german,english,TRUE,L2,NA,M,52,fire,GB,GB_fire.wav,2,fire,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+ZU,ZU_2059726,german,english,TRUE,L2,NA,M,53,rock,KR,KR_rock.wav,1,dull,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,inanimate,inanimate
+EN,EN_2035547,german,"english, a little bit french, a little bit hindi, a little bit italian, latin ",TRUE,L2,NA,F,28,gather,GB,GB_gather.wav,2,deer,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+DE,DE_2044122,german,"english, arabic",TRUE,L2,NA,M,49,fruit,IL,IL_fruit.wav,3,fruit,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2032454,german,"english, dutch",TRUE,L2,NA,F,29,hunt,IL,IL_hunt.wav,3,hunt,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2035082,german,"english, dutch",TRUE,L2,NA,F,29,this,NC,NC_this.wav,6,woman,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,demonstrative,animate
+DE,DE_2009354,german,"english, french",TRUE,L2,NA,F,29,man,IL,IL_man.wav,5,eat,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,people,animate
+DE,DE_2009857,german,"english, french",TRUE,L2,NA,M,30,good,IL,IL_good.wav,1,good,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2011955,german,"english, french",TRUE,L2,NA,F,34,meat,IL,IL_meat.wav,3,eat,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2020666,german,"english, french",TRUE,L2,NA,F,28,man,IL,IL_man.wav,1,hunt,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,people,animate
+DE,DE_2021203,german,"english, french",TRUE,L2,NA,F,55,one,NC,NC_one.wav,3,rock,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,quantifier,animate
+DE,DE_2028933,german,"english, french",TRUE,L2,southfranconian,M,33,dull,IL,IL_dull.wav,1,dull,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2037869,german,"english, french",TRUE,L2,NA,F,53,eat,KR,KR_eat.wav,1,eat,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2039750,german,"english, french",TRUE,L2,northern,F,79,hide,KD,KD_hide.wav,2,tiger,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2040180,german,"english, french",TRUE,L2,NA,F,36,eat,KD,KD_eat.wav,1,eat,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2072116,german,"english, french",TRUE,L2,NA,F,42,tiger,KR,KR_tiger.wav,2,tiger,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,animal,animate
+DE,DE_2017196,german,"english, french ",TRUE,L2,bavarian,F,27,sharp,NC,NC_sharp.wav,1,sharp,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2018342,german,"english, french, a little bit italian, a little bit spanish",TRUE,L2,bavarian,M,36,eat,KR,KR_eat.wav,1,eat,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2013436,german,"english, french, catalan, spanish, russian, czech, italian",TRUE,L2,NA,F,66,meat,IL,IL_meat.wav,1,eat,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2020772,german,"english, french, dutch",TRUE,L2,NA,F,24,woman,IL,IL_woman.wav,1,woman,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,people,animate
+DE,DE_2046800,german,"english, french, finnish",TRUE,L2,NA,F,25,cook,GB,GB_cook.wav,2,cook,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2008469,german,"english, french, hungarian",TRUE,L2,NA,M,42,pound,NC,NC_pound.wav,3,pound,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2015119,german,"english, french, latin",TRUE,L2,NA,F,21,hunt,IL,IL_hunt.wav,2,hunt,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2024982,german,"english, french, latin",TRUE,L2,NA,M,33,small,NC,NC_small.wav,3,small,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2109173,german,"english, french, latin, italian",TRUE,L2,berlin,F,37,rock,KR,KR_rock.wav,6,rock,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2035188,german,"english, french, spanish",TRUE,L2,swissgerman,M,30,meat,IL,IL_meat.wav,2,meat,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2043127,german,"english, french, spanish",TRUE,L2,NA,F,50,knife,KD,KD_knife.wav,3,knife,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2007185,german,"english, french, spanish, catalan, turkish",TRUE,L2,NA,M,50,good,NC,NC_good.wav,6,tiger,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2008182,german,"english, french, spanish, dutch, danish, swedish",TRUE,L2,NA,F,27,water,SU,SU_water.wav,1,water,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2055806,german,"english, french, spanish, dutch, NGT, irish",TRUE,L2,NA,F,26,meat,BW,BW_meat.wav,4,hunt,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2007595,german,"english, french, spanish, japanese",TRUE,L2,NA,F,32,fruit,IL,IL_fruit.wav,3,fruit,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2019115,german,"english, french, spanish, polish",TRUE,L2,NA,F,22,fire,IL,IL_fire.wav,1,fire,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2035314,german,"english, french, turkish, russian",TRUE,L2,NA,F,23,sharp,KD,KD_sharp.wav,1,sharp,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2007942,german,"english, italian, french",TRUE,L2,NA,F,20,man,BW,BW_man.wav,4,man,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,people,animate
+DE,DE_2009820,german,"english, italian, french",TRUE,L2,NA,F,44,knife,IL,IL_knife.wav,3,deer,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2017541,german,"english, latin",TRUE,L2,NA,F,20,one,NC,NC_one.wav,1,clapping,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,quantifier,animate
+DE,DE_2037989,german,"english, polish",TRUE,L2,NA,F,30,fruit,IL,IL_fruit.wav,2,fruit,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+PT,PT_2123907,german,"english, portuguese, spanish, french ",TRUE,L2,brasilian,F,20,sharp,NC,NC_sharp.wav,3,hunt,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+DE,DE_2016675,german,"english, potuguese, french, spanish",TRUE,L2,NA,F,49,this,SU,SU_this.wav,3,man,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,demonstrative,animate
+DE,DE_2016147,german,"english, russian, dutch",TRUE,L2,NA,M,49,dull,BW,BW_dull.wav,2,bad,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2055406,german,"english, russian, potuguese",TRUE,L2,NA,F,31,fruit,KD,KD_fruit.wav,4,fruit,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2026502,german,"english, russian, spanish, swedish",TRUE,L2,NA,F,39,big,BW,BW_big.wav,4,deer,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2017828,german,"english, spanish",TRUE,L2,NA,F,30,gather,GB,GB_gather.wav,4,gather,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2038972,german,"english, spanish, dutch",TRUE,L2,NA,M,47,meat,IL,IL_meat.wav,2,meat,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2021088,german,"english, spanish, finnish, swedish",TRUE,L2,NA,F,24,bad,IL,IL_bad.wav,1,bad,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2007575,german,"english, spanish, french, dutch, hungarian",TRUE,L2,carinthian,F,28,eat,KD,KD_eat.wav,1,eat,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2025088,german,"english, spanish, japanese, french",TRUE,L2,NA,F,24,child,GB,GB_child.wav,1,child,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,people,animate
+DE,DE_2039440,german,"english, swedish",TRUE,L2,NA,F,23,sleep,NC,NC_sleep.wav,1,sleep,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2015371,german,"english, swedish, italian, spanish",TRUE,L2,"hessian, northern, platt",F,27,meat,BW,BW_meat.wav,2,eat,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2020887,german,"english, swedish, norwegian",TRUE,L2,NA,F,25,that,KD,KD_that.wav,3,tiger,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,demonstrative,animate
+DE,DE_2036752,german,"french, english",TRUE,L2,rhine franconian,F,21,eat,KR,KR_eat.wav,1,eat,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2026608,german,"french, english, german",TRUE,L2,NA,F,29,rock,KR,KR_rock.wav,3,good,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,inanimate,inanimate
+DE,DE_2006973,german,"french, english, italian, vietnamese, turkish",TRUE,L2,NA,F,28,one,BW,BW_one.wav,2,woman,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,quantifier,animate
+DE,DE_2022372,german,"french, english, russian, spanish",TRUE,L2,NA,F,26,snake,BW,BW_snake.wav,4,snake,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,animal,animate
+DE,DE_2036644,german,"french, english, spanish",TRUE,L2,moselle franconian,M,50,snake,SU,SU_snake.wav,1,snake,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,noun,animal,animate
+IT,IT_2100872,german,"italian, english, spanish, french",TRUE,L2,NA,F,49,bad,BW,BW_bad.wav,1,bad,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2070920,german,"italian, french, english",TRUE,L2,NA,M,59,woman,KR,KR_woman.wav,6,dull,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,people,animate
+DE,DE_2017558,german ,english ,TRUE,L2,hessian,M,25,sleep,NC,NC_sleep.wav,2,sleep,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+DE,DE_2043880,"german, english","french, swedish",FALSE,L1,NA,F,29,big,GB,GB_big.wav,3,big,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,adjective,animate
+DE,DE_2039334,"german, turkish","english, norwegian",TRUE,L2,NA,F,32,cook,KR,KR_cook.wav,2,cook,1,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,action,action,animate
+GR,GR_2037268,greek,"dutch, english, german",TRUE,L2,NA,F,28,small,IL,IL_small.wav,3,this,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2053562,greek,english,TRUE,L2,NA,M,25,hunt,GB,GB_hunt.wav,3,fire,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,action,action,animate
+GR,GR_2055020,greek,english,TRUE,L2,NA,F,25,gather,GB,GB_gather.wav,3,fire,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,action,action,animate
+GR,GR_2144270,greek,english,TRUE,L2,NA,M,42,dull,BW,BW_dull.wav,5,dull,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2038207,greek,"english, french",TRUE,L2,NA,M,29,meat,BW,BW_meat.wav,1,eat,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,inanimate,inanimate
+GR,GR_2052566,greek,"english, french",TRUE,L2,NA,M,33,small,IL,IL_small.wav,4,sleep,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2053235,greek,"english, french",TRUE,L2,NA,F,38,fruit,KD,KD_fruit.wav,1,eat,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,inanimate,inanimate
+GR,GR_2053502,greek,"english, french",TRUE,L2,NA,M,26,dull,BW,BW_dull.wav,6,tiger,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2054044,greek,"english, french",TRUE,L2,NA,F,26,one,KR,KR_one.wav,6,one,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,quantifier,animate
+GR,GR_2054665,greek,"english, french",TRUE,L2,NA,F,25,snake,SU,SU_snake.wav,6,snake,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,animal,animate
+GR,GR_2054858,greek,"english, french",TRUE,L2,NA,F,26,cut,GB,GB_cut.wav,2,cut,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,action,action,animate
+GR,GR_2054169,greek,"english, french ",TRUE,L2,NA,F,32,knife,BW,BW_knife.wav,3,hide,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,inanimate,inanimate
+GR,GR_2054347,greek,"english, french ",TRUE,L2,NA,F,29,snake,NC,NC_snake.wav,3,sharp,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,animal,animate
+GR,GR_2055527,greek,"english, french, arabic",TRUE,L2,NA,M,32,this,IL,IL_this.wav,3,eat,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,demonstrative,animate
+GR,GR_2055292,greek,"english, french, german",TRUE,L2,NA,F,25,dull,IL,IL_dull.wav,26,dull,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2037777,greek,"english, french, portuguese, spanish",TRUE,L2,NA,F,29,eat,KD,KD_eat.wav,2,eat,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,action,action,animate
+GR,GR_2052834,greek,"english, french, spanish, german",TRUE,L2,NA,F,43,small,IL,IL_small.wav,3,fruit,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2039546,greek,"english, german",TRUE,L2,NA,F,25,man,KD,KD_man.wav,1,man,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,people,animate
+GR,GR_2041966,greek,"english, german, chinese",TRUE,L2,NA,F,20,big,BW,BW_big.wav,2,big,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2052940,greek,"english, german, turkish",TRUE,L2,NA,F,25,tiger,BW,BW_tiger.wav,1,snake,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,animal,animate
+GR,GR_2054929,greek,"english, spanish",TRUE,L2,NA,F,27,bad,BW,BW_bad.wav,7,dull,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2052152,greek,"english, spanish, french",TRUE,L2,NA,F,45,small,IL,IL_small.wav,7,hunt,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2053049,greek,"english, spanish, french",TRUE,L2,NA,F,25,one,KR,KR_one.wav,3,many,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,quantifier,animate
+GR,GR_2053930,greek,"english,french, italian",TRUE,L2,NA,F,42,many,KR,KR_many.wav,2,many,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,quantifier,animate
+GR,GR_2052949,greek,"english,french,italian",TRUE,L2,NA,F,24,big,BW,BW_big.wav,1,eat,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2052791,greek,"french, english",TRUE,L2,cretan,F,35,knife,IL,IL_knife.wav,1,knife,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,inanimate,inanimate
+GR,GR_2041713,greek,"german, english",TRUE,L2,athenian,F,40,knife,BW,BW_knife.wav,3,knife,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,inanimate,inanimate
+GR,GR_2041501,greek,"german,english, spanish",TRUE,L2,NA,F,48,sleep,NC,NC_sleep.wav,2,sleep,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,action,action,animate
+GR,GR_2054771,greek ,english ,TRUE,L2,NA,M,26,fire,IL,IL_fire.wav,5,fire,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,inanimate,inanimate
+GR,GR_2037162,greek ,"english, french, bulgarian ",TRUE,L2,pontian ,M,36,that,NC,NC_that.wav,3,one,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,demonstrative,animate
+GR,GR_2052534,greek ,"english, french, german ",TRUE,L2,NA,F,30,gather,AB,AB_gather.wav,5,child,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,action,action,animate
+GR,GR_2041607,greek ,"english, german ",TRUE,L2,NA,F,24,cook,KD,KD_cook.wav,4,deer,0,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,action,action,animate
+GR,GR_2052285,greek ,"english, italian ",TRUE,L2,cretan ,F,26,tiger,KR,KR_tiger.wav,1,tiger,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,noun,animal,animate
+GR,GR_2037556,"greek, german",english,TRUE,L2,NA,F,28,good,NC,NC_good.wav,2,good,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,adjective,animate
+GR,GR_2041334,"greek, german","english, dutch",TRUE,L2,bavarian,F,19,this,NC,NC_this.wav,4,this,1,Greek,ell,different,IE,Europe,W and SW Eurasia,22,39,IE,property,demonstrative,animate
+HU,HU_2115022,hungarian,english,TRUE,L2,NA,F,55,that,BW,BW_that.wav,6,rock,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,demonstrative,animate
+HU,HU_2116880,hungarian,english,TRUE,L2,NA,M,42,hide,NC,NC_hide.wav,4,bad,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,action,action,animate
+HU,HU_2117239,hungarian,english,TRUE,L2,NA,F,39,dull,GB,GB_dull.wav,5,dull,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,adjective,animate
+HU,HU_2117961,hungarian,english,TRUE,L2,NA,M,49,big,GB,GB_big.wav,1,big,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,adjective,animate
+HU,HU_2118683,hungarian,english,TRUE,L2,hajdu,F,40,child,GB,GB_child.wav,2,child,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,people,animate
+HU,HU_2119283,hungarian,english,TRUE,L2,NA,M,51,deer,IL,IL_deer.wav,1,deer,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,animal,animate
+HU,HU_2147265,hungarian,english,TRUE,L2,NA,M,59,fire,KD,KD_fire.wav,4,water,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2147593,hungarian,english,TRUE,L2,NA,F,32,fire,IL,IL_fire.wav,2,sharp,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2119177,hungarian,"english, finnish",TRUE,L2,NA,F,25,meat,KR,KR_meat.wav,3,water,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2149459,hungarian,"english, finnish, spanish, german",TRUE,L2,budapest,F,32,sleep,KR,KR_sleep.wav,1,sleep,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,action,action,animate
+HU,HU_2115358,hungarian,"english, french",TRUE,L2,NA,F,18,sharp,NC,NC_sharp.wav,3,tiger,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,adjective,animate
+HU,HU_2115723,hungarian,"english, french",TRUE,L2,NA,F,45,woman,KR,KR_woman.wav,1,good,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,people,animate
+HU,HU_2118072,hungarian,"english, german, italian",TRUE,L2,NA,F,18,fruit,GB,GB_fruit.wav,3,fruit,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2115908,hungarian,"english, german, turkish",TRUE,L2,NA,F,26,woman,KR,KR_woman.wav,1,woman,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,people,animate
+HU,HU_2118857,hungarian,"english, slovak",TRUE,L2,NA,F,52,sleep,NC,NC_sleep.wav,2,sleep,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,action,action,animate
+HU,HU_2147482,hungarian,"english, spanish",TRUE,L2,budapest,M,33,cut,KR,KR_cut.wav,3,cut,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,action,action,animate
+HU,HU_2118240,hungarian,"english, turkish, swedish",TRUE,L2,NA,F,41,knife,IL,IL_knife.wav,2,knife,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2118346,hungarian,"german, english",TRUE,L2,NA,F,40,rock,IL,IL_rock.wav,7,rock,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,inanimate,inanimate
+HU,HU_2119389,hungarian,"german, english",TRUE,L2,NA,F,53,snake,BW,BW_snake.wav,3,sharp,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,animal,animate
+HU,HU_2119601,hungarian,"german, english",TRUE,L2,NA,F,29,child,GB,GB_child.wav,2,child,1,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,noun,people,animate
+HU,HU_2116177,hungarian ,"german, english, dutch, spanish ",TRUE,L2,NA,F,36,dull,IL,IL_dull.wav,2,deer,0,Hungarian,hun,roman,Finno-Ugric,Europe,W and SW Eurasia,20,47,other,property,adjective,animate
+EN,EN_2036332,isizulu,english,TRUE,L2,NA,M,29,that,NC,NC_that.wav,5,that,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,demonstrative,animate
+IT,IT_2061913,italian,english,TRUE,L2,sicilian,F,25,bad,BW,BW_bad.wav,2,bad,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2071105,italian,english,TRUE,L2,neapolitan,F,40,man,IL,IL_man.wav,5,big,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,people,animate
+IT,IT_2074909,italian,english,TRUE,L2,NA,F,19,big,BW,BW_big.wav,7,fire,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2074968,italian,english,TRUE,L2,troyan,F,19,water,KD,KD_water.wav,6,water,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,inanimate,inanimate
+IT,IT_2075281,italian,english,TRUE,L2,brescia,F,19,sleep,KR,KR_sleep.wav,1,sleep,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2075578,italian,english,TRUE,L2,NA,M,20,child,SU,SU_child.wav,2,child,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,people,animate
+IT,IT_2076282,italian,english,TRUE,L2,NA,F,19,snake,BW,BW_snake.wav,2,snake,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,animal,animate
+IT,IT_2076388,italian,english,TRUE,L2,NA,F,19,snake,BW,BW_snake.wav,3,snake,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,animal,animate
+IT,IT_2077044,italian,english,TRUE,L2,torremaggiore,M,19,sharp,KD,KD_sharp.wav,8,sharp,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2078829,italian,english,TRUE,L2,NA,F,21,good,IL,IL_good.wav,3,many,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2080530,italian,english,TRUE,L2,NA,M,22,deer,NC,NC_deer.wav,2,deer,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,animal,animate
+IT,IT_2080742,italian,english,TRUE,L2,calabrian,F,20,fruit,IL,IL_fruit.wav,5,fruit,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,inanimate,inanimate
+IT,IT_2095688,italian,english,TRUE,L2,massafra,F,33,meat,KR,KR_meat.wav,3,meat,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,inanimate,inanimate
+IT,IT_2146971,italian,english,TRUE,L2,NA,F,19,knife,KD,KD_knife.wav,4,dull,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,inanimate,inanimate
+IT,IT_2076650,italian,"english, a little bit french, a little bit german",TRUE,L2,NA,F,48,sleep,KD,KD_sleep.wav,2,sleep,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2088910,italian,"english, a little bit spanish, latin ",TRUE,L2,NA,F,27,this,SU,SU_this.wav,4,dull,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,demonstrative,animate
+EN,EN_2033751,italian,"english, french",TRUE,L2,NA,F,48,knife,KD,KD_knife.wav,1,cut,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+IT,IT_2069027,italian,"english, french",TRUE,L2,irpino,M,28,sleep,KR,KR_sleep.wav,1,sleep,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2073723,italian,"english, french",TRUE,L2,NA,F,43,fire,IL,IL_fire.wav,2,fire,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,inanimate,inanimate
+IT,IT_2137997,italian,"english, french",TRUE,L2,NA,F,34,fruit,GB,GB_fruit.wav,6,cut,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,inanimate,inanimate
+IT,IT_2189531,italian,"english, french",TRUE,L2,NA,F,23,this,IL,IL_this.wav,3,man,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,demonstrative,animate
+IT,IT_2068721,italian,"english, french, german",TRUE,L2,florentine,F,45,that,BW,BW_that.wav,3,big,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,demonstrative,animate
+IT,IT_2068921,italian,"english, french, german",TRUE,L2,florentine,M,28,man,IL,IL_man.wav,1,man,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,people,animate
+IT,IT_2076930,italian,"english, french, german, spanish",TRUE,L2,NA,F,23,child,SU,SU_child.wav,1,child,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,people,animate
+EN,EN_2031376,italian,"english, french, spanish",TRUE,L2,NA,F,40,knife,IL,IL_knife.wav,2,knife,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+IT,IT_2077174,italian,"english, french, spanish",TRUE,L2,veneto,F,19,good,NC,NC_good.wav,2,good,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2078935,italian,"english, french, spanish",TRUE,L2,veneto,M,24,gather,AB,AB_gather.wav,2,sleep,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2063416,italian,"english, german",TRUE,L2,roman,F,34,gather,KR,KR_gather.wav,6,gather,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2073200,italian,"english, german, french",TRUE,L2,NA,F,41,bad,BW,BW_bad.wav,2,water,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2069245,italian,"english, german, rumanian",TRUE,L2,NA,F,29,eat,KR,KR_eat.wav,1,snake,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2105527,italian,"english, german, spanish, french",TRUE,L2,NA,F,20,bad,GB,GB_bad.wav,6,small,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2070565,italian,"english, spanish",TRUE,L2,marchigiano,F,36,this,IL,IL_this.wav,3,this,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,demonstrative,animate
+IT,IT_2074054,italian,"english, spanish",TRUE,L2,bergamo,F,19,eat,IL,IL_eat.wav,2,good,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+EN,EN_2031042,italian,"english, spanish, calabrese",TRUE,L2,NA,M,30,fruit,IL,IL_fruit.wav,1,tiger,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,inanimate,inanimate
+IT,IT_2207878,italian,"english, spanish, portuguese",TRUE,L2,marchigiano,F,25,eat,KD,KD_eat.wav,2,eat,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2070438,italian,"french, english",TRUE,L2,neapolitan,F,43,bad,IL,IL_bad.wav,2,bad,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2100361,italian,"french, english",TRUE,L2,NA,F,27,cook,GB,GB_cook.wav,3,cook,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2151897,italian,"french, english",TRUE,L2,NA,F,21,pound,IL,IL_pound.wav,2,pound,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2070120,italian,"french, english, spanish",TRUE,L2,piedmontese,F,49,snake,BW,BW_snake.wav,2,fire,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,animal,animate
+IT,IT_2070814,italian,"french, english, spanish",TRUE,L2,sicilian,F,37,this,NC,NC_this.wav,3,small,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,demonstrative,animate
+IT,IT_2074276,italian,"french, english, spanish, german ",TRUE,L2,NA,F,22,big,BW,BW_big.wav,6,big,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,adjective,animate
+IT,IT_2097463,italian,"german, english",TRUE,L2,neapolitan,F,28,sleep,KR,KR_sleep.wav,1,sleep,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2103211,italian,"german, english",TRUE,L2,venetian,F,61,one,NC,NC_one.wav,3,pound,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,property,quantifier,animate
+IT,IT_2070332,italian,"german, english, french",TRUE,L2,NA,F,31,hide,NC,NC_hide.wav,3,hide,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,action,action,animate
+IT,IT_2069422,italian,"spanish, english",TRUE,L2,sonnino,M,40,deer,IL,IL_deer.wav,4,deer,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,animal,animate
+IT,IT_2135830,italian ,"english, french",TRUE,L2,NA,M,24,woman,BW,BW_woman.wav,2,good,0,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,people,animate
+EE,EE_2058474,italian ,"estonian, english, spanish ",TRUE,L2,NA,M,38,sleep,NC,NC_sleep.wav,1,sleep,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+IT,IT_2103759,"italian, german ","english, french, spanish ",TRUE,L2,NA,F,24,child,GB,GB_child.wav,6,child,1,Italian,ita,roman,IE,Europe,W and SW Eurasia,12,43,IE,noun,people,animate
+JP,JP_2028251,japanese,english,TRUE,L2,tokyo,M,23,rock,SU,SU_rock.wav,3,small,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,inanimate,inanimate
+JP,JP_2028494,japanese,english,TRUE,L2,kansai,M,22,snake,BW,BW_snake.wav,5,water,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,animal,animate
+JP,JP_2029063,japanese,english,TRUE,L2,NA,M,22,man,IL,IL_man.wav,2,dull,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,people,animate
+JP,JP_2034093,japanese,english,TRUE,L2,NA,F,21,dull,IL,IL_dull.wav,2,sleep,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,adjective,animate
+JP,JP_2039918,japanese,english,TRUE,L2,NA,M,28,child,GB,GB_child.wav,1,child,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,people,animate
+JP,JP_2040621,japanese,english,TRUE,L2,NA,M,24,gather,GB,GB_gather.wav,5,gather,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2040995,japanese,english,TRUE,L2,NA,M,29,eat,KD,KD_eat.wav,2,eat,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2041101,japanese,english,TRUE,L2,"senboku, akita",F,24,one,NC,NC_one.wav,2,sharp,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,quantifier,animate
+JP,JP_2041207,japanese,english,TRUE,L2,NA,F,59,one,KR,KR_one.wav,2,one,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,quantifier,animate
+JP,JP_2043233,japanese,english,TRUE,L2,tokyo,F,42,big,MS,MS_big.wav,1,big,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,adjective,animate
+JP,JP_2043339,japanese,english,TRUE,L2,okoyama,M,40,deer,NC,NC_deer.wav,2,that,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,animal,animate
+JP,JP_2045448,japanese,english,TRUE,L2,NA,F,18,deer,IL,IL_deer.wav,3,gather,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,animal,animate
+JP,JP_2046493,japanese,english,TRUE,L2,toyama,F,19,deer,IL,IL_deer.wav,5,deer,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,animal,animate
+JP,JP_2047059,japanese,english,TRUE,L2,NA,F,23,small,NC,NC_small.wav,2,small,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,adjective,animate
+JP,JP_2047178,japanese,english,TRUE,L2,hirado,F,22,that,BW,BW_that.wav,4,that,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,demonstrative,animate
+JP,JP_2047291,japanese,english,TRUE,L2,NA,F,18,woman,BW,BW_woman.wav,2,sharp,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,people,animate
+JP,JP_2047368,japanese,english,TRUE,L2,NA,F,19,hide,IL,IL_hide.wav,4,sharp,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2048303,japanese,english,TRUE,L2,NA,F,18,cook,KR,KR_cook.wav,2,one,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2027996,japanese,"english, italian",TRUE,L2,NA,F,34,man,IL,IL_man.wav,5,tiger,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,people,animate
+JP,JP_2037664,japanese,"english, spanish",TRUE,L2,NA,M,22,hide,NC,NC_hide.wav,3,hide,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2046107,japanese,"english,chinese",TRUE,L2,NA,F,23,knife,KD,KD_knife.wav,2,knife,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,inanimate,inanimate
+JP,JP_2042370,japanese,"english,french",TRUE,L2,NA,F,38,good,NC,NC_good.wav,3,good,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,adjective,animate
+JP,JP_2044955,japanese,"english,german",TRUE,L2,NA,F,19,eat,KD,KD_eat.wav,1,eat,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,action,action,animate
+JP,JP_2047549,japanese,"english,german,korean",TRUE,L2,NA,F,22,one,BW,BW_one.wav,1,pound,0,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,quantifier,animate
+JP,JP_2042158,japanese,"english,german,russian",TRUE,L2,south kanto,M,23,this,IL,IL_this.wav,5,this,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,property,demonstrative,animate
+EN,EN_2026714,"konkani, english","french, japanese, hindi, tamil",FALSE,L1,NA,F,53,tiger,NC,NC_tiger.wav,1,sharp,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+KR,KR_2120978,korean,english,TRUE,L2,NA,M,26,pound,IL,IL_pound.wav,3,this,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,action,action,animate
+KR,KR_2122698,korean,english,TRUE,L2,NA,F,26,pound,IL,IL_pound.wav,2,pound,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,action,action,animate
+KR,KR_2145933,korean,english,TRUE,L2,NA,M,27,many,KR,KR_many.wav,3,water,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,property,quantifier,animate
+KR,KR_2192134,korean,english,TRUE,L2,gyeonggi,M,27,water,SU,SU_water.wav,2,water,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+KR,KR_2192394,korean,english,TRUE,L2,NA,F,19,knife,KD,KD_knife.wav,3,knife,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+KR,KR_2192620,korean,english,TRUE,L2,jeolla,M,31,rock,IL,IL_rock.wav,4,rock,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+KR,KR_2192726,korean,english,TRUE,L2,gyeonggi,F,31,knife,BW,BW_knife.wav,4,knife,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+KR,KR_2192867,korean,english,TRUE,L2,NA,F,20,fire,GB,GB_fire.wav,2,sharp,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+KR,KR_2194038,korean,english,TRUE,L2,gyeonggi,F,36,good,IL,IL_good.wav,1,good,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,property,adjective,animate
+KR,KR_2194144,korean,english,TRUE,L2,NA,M,29,rock,IL,IL_rock.wav,3,pound,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+KR,KR_2199504,korean,english,TRUE,L2,NA,F,23,snake,NC,NC_snake.wav,3,snake,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,animal,animate
+KR,KR_2194250,korean,"english, a little bit japanese",TRUE,L2,NA,F,39,water,SU,SU_water.wav,6,meat,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+KR,KR_2121353,korean,"english, chinese",TRUE,L2,NA,F,21,tiger,NC,NC_tiger.wav,3,hide,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,animal,animate
+KR,KR_2192500,korean,"english, chinese",TRUE,L2,gyeonggi,F,29,fire,KD,KD_fire.wav,1,water,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+KR,KR_2122536,korean,"english, french",TRUE,L2,NA,F,23,pound,NC,NC_pound.wav,6,pound,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,action,action,animate
+KR,KR_2193409,korean,"english, japanese",TRUE,L2,NA,M,25,sleep,KR,KR_sleep.wav,1,sleep,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,action,action,animate
+KR,KR_2194312,korean,"english, japanese",TRUE,L2,NA,M,30,sleep,NC,NC_sleep.wav,2,sleep,1,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,action,action,animate
+JP,JP_2026396,korean,"japanese, english",TRUE,L2,gyeonggi,F,25,deer,IL,IL_deer.wav,3,deer,1,Japanese,jpn,different,Japanese,N Coast Asia,N-C Asia,140,37,other,noun,animal,animate
+KR,KR_2192288,korean,"japanese, english",TRUE,L2,NA,F,31,knife,BW,BW_knife.wav,1,clapping,0,Korean,kor,different,Korean,N Coast Asia,N-C Asia,128,37.5,other,noun,inanimate,inanimate
+TR,TR_2157340,kurdish,"german, english",TRUE,L2,NA,M,27,fire,IL,IL_fire.wav,4,fire,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+EE,EE_2059385,latvian,"estonian, english, russian",TRUE,L2,NA,F,33,gather,AB,AB_gather.wav,4,gather,1,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,action,action,animate
+RU,RU_2073094,macedonian,"english, serbian, spanish, french",TRUE,L2,NA,F,34,fire,GB,GB_fire.wav,6,fire,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,inanimate,inanimate
+PL,PL_2008030,polish,english,TRUE,L2,NA,F,29,bad,IL,IL_bad.wav,1,man,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2009277,polish,english,TRUE,L2,NA,F,28,child,GB,GB_child.wav,3,child,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,people,animate
+PL,PL_2014004,polish,english,TRUE,L2,NA,M,21,child,IL,IL_child.wav,2,child,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,people,animate
+PL,PL_2018230,polish,english,TRUE,L2,NA,M,18,big,MS,MS_big.wav,2,big,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2022849,polish,english,TRUE,L2,NA,F,25,meat,KR,KR_meat.wav,4,meat,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+PL,PL_2023368,polish,english,TRUE,L2,NA,F,43,cook,GB,GB_cook.wav,5,many,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2023605,polish,english,TRUE,L2,NA,F,21,dull,GB,GB_dull.wav,1,dull,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2060282,polish,english,TRUE,L2,NA,F,31,cook,KD,KD_cook.wav,5,deer,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2081616,polish,english,TRUE,L2,NA,F,65,small,TM,TM_small.wav,15,big,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2048837,polish,english ,TRUE,L2,NA,F,28,pound,IL,IL_pound.wav,3,pound,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2014368,polish,"english, french",TRUE,L2,NA,F,28,many,KR,KR_many.wav,4,cook,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,quantifier,animate
+PL,PL_2016033,polish,"english, french",TRUE,L2,NA,M,20,meat,IL,IL_meat.wav,2,good,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+PL,PL_2019534,polish,"english, french",TRUE,L2,NA,F,20,big,GB,GB_big.wav,2,big,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+EN,EN_2032036,polish,"english, french, italian ",TRUE,L2,NA,F,34,good,NC,NC_good.wav,2,good,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+EN,EN_1993336,polish,"english, german",TRUE,L2,NA,F,27,dull,BW,BW_dull.wav,2,dull,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+PL,PL_1997874,polish,"english, german",TRUE,L2,NA,F,27,knife,KD,KD_knife.wav,1,knife,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+PL,PL_2015927,polish,"english, german",TRUE,L2,NA,M,25,cook,KD,KD_cook.wav,2,good,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2018013,polish,"english, german",TRUE,L2,NA,F,22,woman,IL,IL_woman.wav,2,fruit,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,people,animate
+PL,PL_2018041,polish,"english, german",TRUE,L2,NA,F,18,rock,IL,IL_rock.wav,4,rock,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+PL,PL_2018421,polish,"english, german",TRUE,L2,NA,F,18,deer,KD,KD_deer.wav,2,deer,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,animal,animate
+PL,PL_2020067,polish,"english, german",TRUE,L2,NA,F,18,snake,NC,NC_snake.wav,2,cut,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,animal,animate
+PL,PL_2020484,polish,"english, german",TRUE,L2,NA,F,18,dull,BW,BW_dull.wav,4,dull,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2021622,polish,"english, german",TRUE,L2,NA,F,23,knife,KD,KD_knife.wav,1,knife,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+PL,PL_2023711,polish,"english, german",TRUE,L2,silesian,F,23,eat,KR,KR_eat.wav,3,eat,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2024564,polish,"english, german",TRUE,L2,NA,F,25,knife,BW,BW_knife.wav,1,meat,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+PL,PL_2028145,polish,"english, german",TRUE,L2,NA,M,18,rock,IL,IL_rock.wav,3,rock,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+PL,PL_2034654,polish,"english, german",TRUE,L2,NA,M,23,big,BW,BW_big.wav,7,fire,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2060961,polish,"english, german",TRUE,L2,NA,F,22,big,GB,GB_big.wav,2,big,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2014763,polish,"english, german, french",TRUE,L2,NA,F,22,fire,KD,KD_fire.wav,5,cut,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+PL,PL_2011259,polish,"english, german, hindi, sanskrit, japanese",TRUE,L2,NA,M,36,woman,KR,KR_woman.wav,4,woman,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,people,animate
+PL,PL_2023456,polish,"english, german, italian",TRUE,L2,NA,F,19,bad,BW,BW_bad.wav,4,bad,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2060528,polish,"english, german, spanish",TRUE,L2,NA,F,26,hunt,BW,BW_hunt.wav,5,that,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2017373,polish,"english, german, spanish, russian",TRUE,L2,NA,F,19,dull,BW,BW_dull.wav,2,dull,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2015079,polish,"english, portuguese, spanish, german",TRUE,L2,poznan,M,29,tiger,BW,BW_tiger.wav,1,tiger,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,animal,animate
+PL,PL_2011661,polish,"english, russian",TRUE,L2,NA,F,21,big,MS,MS_big.wav,2,eat,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2044384,polish,"english, russian",TRUE,L2,NA,M,30,gather,KR,KR_gather.wav,3,eat,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2048976,polish,"english, russian, german, spanish",TRUE,L2,NA,F,33,snake,SU,SU_snake.wav,2,snake,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,animal,animate
+PL,PL_2021728,polish,"english, spanish, german",TRUE,L2,NA,F,18,hide,KD,KD_hide.wav,5,fire,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2056018,polish,"german, english",TRUE,L2,NA,F,25,gather,AB,AB_gather.wav,2,dull,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2061440,polish,"german, english",TRUE,L2,NA,F,27,many,LJ,LJ_many.wav,3,small,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,quantifier,animate
+PL,PL_2022234,polish,"german, english, norwegian, hungarian",TRUE,L2,NA,F,30,cook,GB,GB_cook.wav,4,cook,1,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,action,action,animate
+PL,PL_2051650,polish,"spanish, english, french, italian, czech",TRUE,L2,NA,M,27,bad,BW,BW_bad.wav,3,sharp,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,adjective,animate
+PL,PL_2018879,polish,"spanish, english, german, russian",TRUE,L2,NA,M,18,meat,BW,BW_meat.wav,1,tiger,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,noun,inanimate,inanimate
+EN,EN_2033313,polish ,english ,TRUE,L2,NA,F,44,small,NC,NC_small.wav,3,water,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+PL,PL_2014900,"polish, silesian","german, english",TRUE,L2,NA,F,28,this,IL,IL_this.wav,6,dull,0,Polish,pol,roman,IE,Europe,W and SW Eurasia,20,52,IE,property,demonstrative,animate
+EN,EN_2033419,portuguese,english,TRUE,L2,NA,F,32,man,KD,KD_man.wav,2,man,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,people,animate
+PT,PT_2121381,portuguese,english,TRUE,L2,NA,M,23,child,IL,IL_child.wav,2,child,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,people,animate
+PT,PT_2122428,portuguese,english,TRUE,L2,mineiro,M,36,that,NC,NC_that.wav,8,meat,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,demonstrative,animate
+PT,PT_2123079,portuguese,english,TRUE,L2,alentejan,F,23,deer,KD,KD_deer.wav,2,deer,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,animal,animate
+PT,PT_2125094,portuguese,english,TRUE,L2,NA,M,26,that,NC,NC_that.wav,4,big,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,demonstrative,animate
+PT,PT_2125371,portuguese,english,TRUE,L2,NA,F,20,many,LJ,LJ_many.wav,3,many,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,quantifier,animate
+PT,PT_2127150,portuguese,english,TRUE,L2,NA,F,32,pound,NC,NC_pound.wav,3,pound,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2127347,portuguese,english,TRUE,L2,NA,F,42,sleep,KD,KD_sleep.wav,1,sleep,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2128094,portuguese,english,TRUE,L2,NA,M,59,dull,IL,IL_dull.wav,1,woman,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2129609,portuguese,english,TRUE,L2,european,F,29,cut,KR,KR_cut.wav,1,dull,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2130648,portuguese,english,TRUE,L2,european,M,47,hunt,BW,BW_hunt.wav,1,deer,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2130955,portuguese,english,TRUE,L2,NA,F,37,meat,BW,BW_meat.wav,2,eat,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+PT,PT_2129023,portuguese,english ,TRUE,L2,european,F,47,dull,IL,IL_dull.wav,2,dull,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2122973,portuguese,"english, french",TRUE,L2,NA,F,35,child,SU,SU_child.wav,1,child,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,people,animate
+PT,PT_2129128,portuguese,"english, french",TRUE,L2,NA,F,34,hunt,GB,GB_hunt.wav,3,hunt,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2129331,portuguese,"english, french",TRUE,L2,european,F,35,that,BW,BW_that.wav,4,good,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,demonstrative,animate
+EN,EN_2094717,portuguese,"english, french, japanese",TRUE,L2,NA,M,31,bad,BW,BW_bad.wav,2,bad,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+PT,PT_2123458,portuguese,"english, french, spanish",TRUE,L2,NA,F,35,woman,IL,IL_woman.wav,4,woman,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,people,animate
+PT,PT_2123185,portuguese,"english, german, czech, french",TRUE,L2,NA,M,25,many,KR,KR_many.wav,14,many,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,quantifier,animate
+PT,PT_2127615,portuguese,"english, german, russian",TRUE,L2,NA,F,34,cook,GB,GB_cook.wav,3,cook,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2122286,portuguese,"english, spanish",TRUE,L2,brasilian,M,50,small,IL,IL_small.wav,3,small,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2124444,portuguese,"english, spanish",TRUE,L2,NA,F,19,hide,IL,IL_hide.wav,2,hide,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,action,action,animate
+PT,PT_2124762,portuguese,"english, spanish",TRUE,L2,brasilian,F,26,many,GB,GB_many.wav,3,dull,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,quantifier,animate
+PT,PT_2128268,portuguese,"english, spanish",TRUE,L2,alentejan,M,34,man,IL,IL_man.wav,2,man,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,people,animate
+PT,PT_2124550,portuguese,"english, spanish, french",TRUE,L2,bmdb,F,22,tiger,NC,NC_tiger.wav,4,tiger,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,animal,animate
+PT,PT_2123670,portuguese,"english, spanish, french, calatan",TRUE,L2,NA,M,42,knife,IL,IL_knife.wav,3,knife,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,inanimate,inanimate
+PT,PT_2124772,portuguese,"english, spanish, french, italian",TRUE,L2,NA,M,26,dull,IL,IL_dull.wav,2,sleep,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2128893,portuguese,"english, spanish, french, italian, german",TRUE,L2,NA,M,22,deer,IL,IL_deer.wav,3,gather,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,animal,animate
+PT,PT_2121964,portuguese,"french, english, spanish, italian",TRUE,L2,mineiro,M,44,good,NC,NC_good.wav,3,good,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2124331,portuguese,"german, spanish, english, italian",TRUE,L2,NA,M,22,tiger,KR,KR_tiger.wav,5,tiger,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,animal,animate
+PT,PT_2121235,portuguese,"spanish, english",TRUE,L2,NA,F,43,man,BW,BW_man.wav,3,water,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,noun,people,animate
+PT,PT_2127988,portuguese,"spanish, english",TRUE,L2,NA,M,30,that,NC,NC_that.wav,1,that,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,demonstrative,animate
+PT,PT_2124225,portuguese ,"english, french ",TRUE,L2,NA,F,20,good,GB,GB_good.wav,3,good,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2123780,portuguese ,"english, french, spanish ",TRUE,L2,NA,F,40,dull,BW,BW_dull.wav,2,one,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2121096,portuguese ,"english, spanish, french ",TRUE,L2,NA,F,58,one,KR,KR_one.wav,7,this,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,quantifier,animate
+PT,PT_2124013,portuguese ,"english, spanish, french ",TRUE,L2,NA,F,19,bad,IL,IL_bad.wav,2,bad,1,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+PT,PT_2122070,portuguese ,"english, spanish, french, german ",TRUE,L2,NA,M,35,dull,GB,GB_dull.wav,4,fruit,0,Portuguese,por,roman,IE,Europe,W and SW Eurasia,-8,39,IE,property,adjective,animate
+RO,RO_2050221,romanian,english,TRUE,L2,NA,F,41,dull,GB,GB_dull.wav,2,woman,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,adjective,animate
+RO,RO_2050718,romanian,english,TRUE,L2,NA,F,29,woman,KR,KR_woman.wav,9,woman,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,people,animate
+RO,RO_2052027,romanian,english,TRUE,L2,NA,F,34,child,SU,SU_child.wav,1,child,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,people,animate
+RO,RO_2068312,romanian,english,TRUE,L2,NA,F,28,good,NC,NC_good.wav,2,woman,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,adjective,animate
+RO,RO_2071740,romanian,english,TRUE,L2,NA,F,20,knife,BW,BW_knife.wav,4,cut,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,inanimate,inanimate
+RO,RO_2114036,romanian,english,TRUE,L2,NA,F,20,woman,KR,KR_woman.wav,2,that,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,people,animate
+RO,RO_2050066,romanian,"english, french",TRUE,L2,NA,F,38,tiger,NC,NC_tiger.wav,1,tiger,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,animal,animate
+RO,RO_2058262,romanian,"english, french",TRUE,L2,NA,F,41,man,KD,KD_man.wav,2,man,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,people,animate
+RO,RO_2049681,romanian,"english, french, german",TRUE,L2,NA,F,30,cut,GB,GB_cut.wav,1,cut,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,action,action,animate
+RO,RO_2055912,romanian,"english, french, german",TRUE,L2,NA,F,43,hunt,BW,BW_hunt.wav,3,man,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,action,action,animate
+RO,RO_2068210,romanian,"english, french, italian",TRUE,L2,NA,F,32,small,IL,IL_small.wav,1,woman,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,adjective,animate
+RO,RO_2071533,romanian,"english, french, spanish, german, polish, hungarian, portuguese",TRUE,L2,NA,F,33,that,BW,BW_that.wav,2,this,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,demonstrative,animate
+RO,RO_2089172,romanian,"english, german",TRUE,L2,NA,F,20,many,LJ,LJ_many.wav,3,meat,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,quantifier,animate
+RO,RO_2051756,romanian,"english, german, spanish, french",TRUE,L2,NA,F,34,that,KD,KD_that.wav,2,that,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,demonstrative,animate
+RO,RO_2069546,romanian,"english, hungarian",TRUE,L2,NA,M,35,meat,BW,BW_meat.wav,2,meat,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,inanimate,inanimate
+RO,RO_2050993,romanian,"english, italian",TRUE,L2,NA,F,31,small,IL,IL_small.wav,2,small,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,adjective,animate
+RO,RO_2068357,romanian,"english, italian, spanish",TRUE,L2,NA,F,33,this,IL,IL_this.wav,3,eat,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,demonstrative,animate
+RO,RO_2068571,romanian,"english, spanish",TRUE,L2,NA,F,34,man,KD,KD_man.wav,1,gather,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,people,animate
+RO,RO_2072222,romanian,"english, spanish",TRUE,L2,NA,F,19,many,GB,GB_many.wav,2,water,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,quantifier,animate
+RO,RO_2050433,romanian,"english, spanish, german, italian",TRUE,L2,NA,F,40,this,SU,SU_this.wav,3,deer,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,property,demonstrative,animate
+RO,RO_2052428,romanian,"french, english",TRUE,L2,NA,F,31,meat,KR,KR_meat.wav,3,meat,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,inanimate,inanimate
+RO,RO_2072586,romanian ,english,TRUE,L2,NA,F,18,rock,KR,KR_rock.wav,25,cut,0,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,inanimate,inanimate
+RO,RO_2049923,romanian ,english ,TRUE,L2,NA,F,37,tiger,NC,NC_tiger.wav,2,tiger,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,animal,animate
+RO,RO_2051116,romanian ,"english, spanish",TRUE,L2,NA,F,28,deer,KD,KD_deer.wav,2,deer,1,Romanian,ron,roman,IE,Europe,W and SW Eurasia,25,46,IE,noun,animal,animate
+EN,EN_2031091,russian,english,TRUE,L2,NA,M,25,child,GB,GB_child.wav,4,child,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,people,animate
+RU,RU_2062614,russian,english,TRUE,L2,NA,F,62,dull,BW,BW_dull.wav,8,good,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,property,adjective,animate
+RU,RU_2063117,russian,english,TRUE,L2,NA,F,53,knife,KD,KD_knife.wav,3,knife,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,inanimate,inanimate
+RU,RU_2065958,russian,english,TRUE,L2,NA,F,30,cut,KR,KR_cut.wav,2,cut,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+RU,RU_2067357,russian,english,TRUE,L2,NA,F,19,bad,BW,BW_bad.wav,2,bad,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,property,adjective,animate
+RU,RU_2067463,russian,english,TRUE,L2,NA,F,23,child,IL,IL_child.wav,1,child,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,people,animate
+RU,RU_2067569,russian,english,TRUE,L2,NA,F,22,tiger,KR,KR_tiger.wav,4,this,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,animal,animate
+RU,RU_2067617,russian,english,TRUE,L2,NA,F,20,pound,KR,KR_pound.wav,5,dull,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+RU,RU_2082071,russian,english,TRUE,L2,NA,F,21,this,IL,IL_this.wav,2,this,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,property,demonstrative,animate
+RU,RU_2095225,russian,english,TRUE,L2,NA,M,22,fire,GB,GB_fire.wav,2,fire,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,inanimate,inanimate
+RU,RU_2065744,russian,english ,TRUE,L2,NA,F,44,pound,KR,KR_pound.wav,2,pound,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+AM,AM_2124652,russian,"english, armenian, french",TRUE,L2,karabakh,F,26,small,TM,TM_small.wav,2,small,1,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,property,adjective,animate
+RU,RU_2064657,russian,"english, czech",TRUE,L2,NA,F,20,fruit,KD,KD_fruit.wav,3,fruit,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,inanimate,inanimate
+RU,RU_2068102,russian,"english, czech",TRUE,L2,NA,F,21,child,GB,GB_child.wav,1,child,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,people,animate
+FR,FR_2105186,russian,"english, french",TRUE,L2,NA,M,26,fruit,GB,GB_fruit.wav,1,eat,0,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,inanimate,inanimate
+FR,FR_2105020,russian,"english, french ",TRUE,L2,NA,F,22,woman,IL,IL_woman.wav,1,woman,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,noun,people,animate
+AM,AM_2135351,russian,"english, french, italian",TRUE,L2,NA,F,23,pound,KR,KR_pound.wav,4,pound,1,Amharic,amh,different,Afro-Asiatic,Greater Abyssinia,Africa,38,10,other,action,action,animate
+RU,RU_2205067,russian,"english, german",TRUE,L2,NA,F,29,deer,KD,KD_deer.wav,1,deer,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,animal,animate
+RU,RU_2062520,russian,"english, german, french",TRUE,L2,NA,F,30,small,IL,IL_small.wav,2,good,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,property,adjective,animate
+RU,RU_2065214,russian,"english, german, french",TRUE,L2,NA,F,27,that,NC,NC_that.wav,7,that,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,property,demonstrative,animate
+RU,RU_2064048,russian,"english, german, french, hebrew",TRUE,L2,NA,F,45,hunt,IL,IL_hunt.wav,1,hunt,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+RU,RU_2065792,russian,"english, german, spanish",TRUE,L2,NA,F,28,man,IL,IL_man.wav,1,clapping,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,people,animate
+RU,RU_2061788,russian,"english, hebrew",TRUE,L2,NA,M,47,bad,BW,BW_bad.wav,4,bad,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,property,adjective,animate
+RU,RU_2071317,russian,"english, hebrew",TRUE,L2,NA,M,45,water,SU,SU_water.wav,1,water,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,inanimate,inanimate
+RU,RU_2066663,russian,"english, korean",TRUE,L2,NA,F,20,man,KD,KD_man.wav,3,dull,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,people,animate
+RU,RU_2066433,russian,"english, spanish",TRUE,L2,NA,F,20,cut,KR,KR_cut.wav,2,cut,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+EE,EE_2065426,russian,"estonian, english",TRUE,L2,NA,F,49,sharp,KD,KD_sharp.wav,3,sleep,0,Estonian,est,roman,Finno-Ugric,Inner Asia,N-C Asia,26,59,other,property,adjective,animate
+RU,RU_2066788,russian,"french, english",TRUE,L2,NA,F,30,that,KD,KD_that.wav,4,that,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,property,demonstrative,animate
+RU,RU_2065108,russian,"german, english",TRUE,L2,NA,F,30,fruit,KD,KD_fruit.wav,2,fruit,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,noun,inanimate,inanimate
+RU,RU_2065638,russian,"german, english",TRUE,L2,NA,F,35,eat,KD,KD_eat.wav,2,eat,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+RU,RU_2063228,russian,"japanese, english",TRUE,L2,NA,F,56,sleep,NC,NC_sleep.wav,1,sleep,1,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,action,action,animate
+ES,ES_2083727,spanish,"catalan, english, french, german, italian, portuguese, swedish, japanese",TRUE,L2,NA,M,54,sharp,KD,KD_sharp.wav,1,sharp,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,adjective,animate
+EN,EN_2030899,spanish,english,TRUE,L2,NA,F,35,deer,NC,NC_deer.wav,8,sleep,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+EN,EN_2033987,spanish,english,TRUE,L2,NA,M,36,gather,GB,GB_gather.wav,3,gather,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+ES,ES_2066170,spanish,english,TRUE,L2,basque ,M,35,this,NC,NC_this.wav,5,one,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,demonstrative,animate
+ES,ES_2084849,spanish,english,TRUE,L2,NA,F,44,good,NC,NC_good.wav,7,water,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,adjective,animate
+ES,ES_2100788,spanish,english,TRUE,L2,mexican,M,32,good,IL,IL_good.wav,2,bad,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,adjective,animate
+ES,ES_2104450,spanish,english,TRUE,L2,andalusian,F,49,hunt,BW,BW_hunt.wav,2,hunt,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,action,action,animate
+ES,ES_2107840,spanish,english,TRUE,L2,NA,F,20,bad,BW,BW_bad.wav,4,fire,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,adjective,animate
+ES,ES_2109053,spanish,english,TRUE,L2,NA,F,19,cut,SU,SU_cut.wav,4,cut,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,action,action,animate
+ES,ES_2107803,spanish,"english, basque",TRUE,L2,NA,M,19,pound,NC,NC_pound.wav,2,pound,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,action,action,animate
+ES,ES_2108182,spanish,"english, basque",TRUE,L2,NA,F,20,fruit,GB,GB_fruit.wav,2,water,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,noun,inanimate,inanimate
+ES,ES_2108273,spanish,"english, basque",TRUE,L2,NA,F,20,sleep,NC,NC_sleep.wav,1,sleep,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,action,action,animate
+EN,EN_2030766,spanish,"english, catalan",TRUE,L2,NA,F,38,hide,KD,KD_hide.wav,2,hide,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+ES,ES_2108485,spanish,"english, french",TRUE,L2,NA,F,19,eat,IL,IL_eat.wav,1,good,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,action,action,animate
+ES,ES_2108740,spanish,"english, french",TRUE,L2,NA,F,19,rock,IL,IL_rock.wav,2,rock,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,noun,inanimate,inanimate
+ES,ES_2108595,spanish,"english, french ",TRUE,L2,NA,F,20,eat,IL,IL_eat.wav,2,eat,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,action,action,animate
+EN,EN_2029633,spanish,"english, french, german",TRUE,L2,NA,M,20,good,IL,IL_good.wav,2,big,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,property,adjective,animate
+ES,ES_2048974,spanish,"english, german",TRUE,L2,NA,F,52,small,IL,IL_small.wav,4,small,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,adjective,animate
+EN,EN_2072464,spanish,"english, german, dutch",TRUE,L2,NA,M,21,deer,KD,KD_deer.wav,3,hunt,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+ES,ES_2072570,spanish,"english, italian",TRUE,L2,rioplatense,F,21,small,NC,NC_small.wav,4,sleep,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,adjective,animate
+ES,ES_2110814,spanish,"english, italian, portuguese, french",TRUE,L2,rioplatense,F,54,deer,NC,NC_deer.wav,2,bad,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,noun,animal,animate
+EN,EN_2017753,spanish,"english, japanese, slovak, german",TRUE,L2,NA,F,36,snake,NC,NC_snake.wav,3,cook,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,animal,animate
+ES,ES_2107752,spanish,"english, latin",TRUE,L2,sabanero,M,20,that,NC,NC_that.wav,4,knife,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,demonstrative,animate
+ES,ES_2099999,spanish,"french, chinese, english",TRUE,L2,NA,F,26,gather,KR,KR_gather.wav,3,cook,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,action,action,animate
+ES,ES_2100037,spanish,"german, english, french",TRUE,L2,NA,F,46,fruit,GB,GB_fruit.wav,3,fruit,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,noun,inanimate,inanimate
+ES,ES_2064046,spanish,"german, italian, english",TRUE,L2,NA,F,49,woman,KR,KR_woman.wav,37,pound,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,noun,people,animate
+ES,ES_2064970,spanish,"portuguese,  english ",TRUE,L2,NA,M,59,dull,BW,BW_dull.wav,3,deer,0,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,adjective,animate
+ES,ES_2085397,"spanish, german","english, french",TRUE,L2,NA,F,50,bad,BW,BW_bad.wav,2,bad,1,Spanish,spa,roman,IE,Europe,W and SW Eurasia,-4,40,IE,property,adjective,animate
+SE,SE_2069926,swedish,english,TRUE,L2,dalsland,M,29,small,TM,TM_small.wav,11,child,0,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,property,adjective,animate
+SE,SE_2125930,swedish,english,TRUE,L2,NA,M,28,this,IL,IL_this.wav,6,this,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,property,demonstrative,animate
+SE,SE_2126751,swedish,english,TRUE,L2,stockholm,F,55,tiger,BW,BW_tiger.wav,1,tiger,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,animal,animate
+SE,SE_2126421,swedish,"english, french",TRUE,L2,NA,F,23,snake,SU,SU_snake.wav,3,snake,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,animal,animate
+SE,SE_2079324,swedish,"english, french, german",TRUE,L2,NA,F,45,one,BW,BW_one.wav,3,dull,0,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,property,quantifier,animate
+SE,SE_2126645,swedish,"english, french, german",TRUE,L2,NA,F,39,cook,GB,GB_cook.wav,2,cook,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,action,action,animate
+SE,SE_2080068,swedish,"english, french, german, danish, portuguese, spanish, italian",TRUE,L2,NA,M,74,bad,BW,BW_bad.wav,4,bad,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,property,adjective,animate
+SE,SE_2085984,swedish,"english, german ",TRUE,L2,NA,F,29,water,SU,SU_water.wav,2,water,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,inanimate,inanimate
+SE,SE_2080848,swedish,"english, german, dutch, a little bit estniska, a little bit spanish, a little bit swahili",TRUE,L2,NA,F,32,knife,IL,IL_knife.wav,2,knife,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,inanimate,inanimate
+SE,SE_2126166,swedish,"english, german, french",TRUE,L2,NA,F,35,tiger,BW,BW_tiger.wav,1,tiger,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,animal,animate
+SE,SE_2079521,swedish,"english, german, russian, chinese",TRUE,L2,NA,F,74,fire,KD,KD_fire.wav,2,fire,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,inanimate,inanimate
+EN,EN_2033459,swedish,"english, spanish",TRUE,L2,NA,M,21,child,IL,IL_child.wav,1,child,1,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,noun,people,animate
+SE,SE_2126867,swedish,"english, spanish",TRUE,L2,NA,M,39,dull,GB,GB_dull.wav,3,dull,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,property,adjective,animate
+SE,SE_2125928,swedish,"english, spanish, french",TRUE,L2,stockholm,F,24,woman,BW,BW_woman.wav,3,woman,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,people,animate
+SE,SE_2080954,swedish,"english, spanish, italian",TRUE,L2,NA,F,31,deer,IL,IL_deer.wav,3,deer,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,noun,animal,animate
+SE,SE_2084957,"swedish, finnish","english, french, danish, portuguese",TRUE,L2,scanian,F,29,big,GB,GB_big.wav,2,dull,0,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,property,adjective,animate
+SE,SE_2066393,"swedish, korean",english,TRUE,L2,NA,F,22,small,NC,NC_small.wav,4,small,1,Swedish,swe,roman,IE,Europe,W and SW Eurasia,15,60,IE,property,adjective,animate
+DE,DE_2011490,swissgerman,"german, english, french, danish",TRUE,L2,northwest swiss,F,31,one,BW,BW_one.wav,5,man,0,German,deu,roman,IE,Europe,W and SW Eurasia,10,52,IE,property,quantifier,animate
+EN,EN_2086628,thai,english,TRUE,L2,NA,F,25,hide,KD,KD_hide.wav,2,man,0,English UK,eng,roman,IE,Europe,W and SW Eurasia,0,52,IE,action,action,animate
+TH,TH_2109740,thai,english,TRUE,L2,southern,F,42,rock,IL,IL_rock.wav,3,rock,1,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,noun,inanimate,inanimate
+TH,TH_2109951,thai,english,TRUE,L2,NA,F,63,pound,NC,NC_pound.wav,5,pound,1,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,action,action,animate
+TH,TH_2111848,thai,english,TRUE,L2,NA,F,48,cook,KD,KD_cook.wav,2,sleep,0,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,action,action,animate
+TH,TH_2111850,thai,english,TRUE,L2,northeastern,F,37,hide,IL,IL_hide.wav,4,dull,0,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,action,action,animate
+TH,TH_2112538,thai,english,TRUE,L2,southern ,M,28,cook,GB,GB_cook.wav,8,cook,1,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,action,action,animate
+TH,TH_2113134,thai,english,TRUE,L2,korat,F,34,sleep,KD,KD_sleep.wav,1,sleep,1,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,action,action,animate
+TH,TH_2113338,thai,english,TRUE,L2,southern,F,35,small,IL,IL_small.wav,4,dull,0,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,property,adjective,animate
+TH,TH_2114194,thai,english,TRUE,L2,korat,F,40,gather,KR,KR_gather.wav,3,sleep,0,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,action,action,animate
+TH,TH_2122861,thai,english,TRUE,L2,southern,F,48,this,NC,NC_this.wav,4,woman,0,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,property,demonstrative,animate
+TH,TH_2113447,thai,"english, chinese",TRUE,L2,NA,F,35,eat,IL,IL_eat.wav,1,eat,1,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,action,action,animate
+TH,TH_2119707,thai,"english, japanese",TRUE,L2,northern,F,36,one,KR,KR_one.wav,10,one,1,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,property,quantifier,animate
+TH,TH_2116679,thai,"english, norwegian",TRUE,L2,NA,F,43,this,NC,NC_this.wav,9,this,1,Thai,tha,different,Tai-Kadai,Southeast Asia,S/SE Asia,101,16,other,property,demonstrative,animate
+TR,TR_2077540,turkce,english,TRUE,L2,NA,M,27,good,NC,NC_good.wav,1,good,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2074723,turkish,a little bit english,TRUE,L2,NA,F,22,rock,SU,SU_rock.wav,8,rock,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+TR,TR_2084198,turkish,"chinese, english, french",TRUE,L2,NA,F,29,cut,GB,GB_cut.wav,1,cut,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,action,action,animate
+TR,TR_2062299,turkish,english,TRUE,L2,NA,F,38,fruit,GB,GB_fruit.wav,1,fruit,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+TR,TR_2074403,turkish,english,TRUE,L2,NA,F,24,gather,AB,AB_gather.wav,3,eat,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,action,action,animate
+TR,TR_2075284,turkish,english,TRUE,L2,NA,F,25,man,BW,BW_man.wav,4,man,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,people,animate
+TR,TR_2076142,turkish,english,TRUE,L2,NA,M,38,fruit,GB,GB_fruit.wav,2,eat,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+TR,TR_2076166,turkish,english,TRUE,L2,NA,F,26,one,BW,BW_one.wav,5,one,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,quantifier,animate
+TR,TR_2077544,turkish,english,TRUE,L2,NA,F,24,tiger,NC,NC_tiger.wav,3,tiger,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,animal,animate
+TR,TR_2077752,turkish,english,TRUE,L2,NA,F,29,many,GB,GB_many.wav,3,many,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,quantifier,animate
+TR,TR_2078674,turkish,english,TRUE,L2,NA,M,25,big,BW,BW_big.wav,5,hunt,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2084517,turkish,english,TRUE,L2,NA,F,22,water,SU,SU_water.wav,2,water,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+TR,TR_2084575,turkish,english,TRUE,L2,NA,F,21,this,NC,NC_this.wav,9,meat,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,demonstrative,animate
+TR,TR_2084829,turkish,english,TRUE,L2,NA,F,21,meat,IL,IL_meat.wav,2,meat,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+TR,TR_2085576,turkish,english,TRUE,L2,NA,F,50,good,NC,NC_good.wav,1,eat,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2088320,turkish,english,TRUE,L2,NA,F,21,meat,KR,KR_meat.wav,2,man,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,inanimate,inanimate
+TR,TR_2119957,turkish,english,TRUE,L2,NA,F,25,hunt,GB,GB_hunt.wav,2,hunt,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,action,action,animate
+TR,TR_2077860,turkish,english ,TRUE,L2,NA,F,32,dull,BW,BW_dull.wav,6,deer,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2078356,turkish,english ,TRUE,L2,NA,F,33,small,TM,TM_small.wav,5,small,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2084317,turkish,english ,TRUE,L2,NA,F,22,good,GB,GB_good.wav,3,this,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2084037,turkish,"english, a little bit french",TRUE,L2,NA,F,37,woman,IL,IL_woman.wav,2,woman,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,people,animate
+TR,TR_2075874,turkish,"english, french",TRUE,L2,NA,F,39,that,BW,BW_that.wav,9,that,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,demonstrative,animate
+TR,TR_2080424,turkish,"english, french",TRUE,L2,NA,F,27,pound,NC,NC_pound.wav,2,pound,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,action,action,animate
+TR,TR_2113015,turkish,"english, french",TRUE,L2,NA,F,26,big,MS,MS_big.wav,1,tiger,0,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2075197,turkish,"english, german",TRUE,L2,NA,F,39,sharp,KD,KD_sharp.wav,2,sharp,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,property,adjective,animate
+TR,TR_2075980,turkish,"english, german",TRUE,L2,NA,M,27,eat,IL,IL_eat.wav,1,eat,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,action,action,animate
+TR,TR_2084320,turkish,"english, german",TRUE,L2,NA,F,21,cut,GB,GB_cut.wav,6,cut,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,action,action,animate
+TR,TR_2079785,turkish,"english, italian",TRUE,L2,NA,F,20,tiger,NC,NC_tiger.wav,1,tiger,1,Turkish,tur,roman,Turkic,Greater Mesopotamia,W and SW Eurasia,35,39,other,noun,animal,animate
+RU,RU_2038822,"ukrainian, russian","english, german",TRUE,L2,NA,F,26,big,BW,BW_big.wav,3,good,0,Russian,rus,different,IE,Inner Asia,N-C Asia,38,56,IE,property,adjective,animate
+FR,FR_2100985,wolof,"french, english ",TRUE,L2,NA,M,26,big,BW,BW_big.wav,5,big,1,French,fra,roman,IE,Europe,W and SW Eurasia,25,62,IE,property,adjective,animate
+CN,CN_2096588,zhuang,english,TRUE,L2,guigang,F,20,rock,IL,IL_rock.wav,1,rock,1,Chinese,cmn,different,Sino-Tibetan,Southeast Asia,S/SE Asia,110,35,other,noun,inanimate,inanimate
+ZU,ZU_2098234,zulu,english,TRUE,L2,NA,F,29,child,IL,IL_child.wav,3,fruit,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,people,animate
+ZU,ZU_2105421,zulu,english,TRUE,L2,NA,M,18,big,GB,GB_big.wav,3,that,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,property,adjective,animate
+ZU,ZU_2129446,zulu,english,TRUE,L2,NA,F,25,this,IL,IL_this.wav,11,dull,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,property,demonstrative,animate
+ZU,ZU_2136679,zulu,english,TRUE,L2,NA,M,24,good,IL,IL_good.wav,3,clapping,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,property,adjective,animate
+ZU,ZU_2138774,zulu,english,TRUE,L2,NA,M,23,cut,KR,KR_cut.wav,2,dull,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,action,action,animate
+ZU,ZU_2139238,zulu,english,TRUE,L2,NA,M,22,eat,KR,KR_eat.wav,3,eat,1,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,action,action,animate
+ZU,ZU_2139788,zulu,english,TRUE,L2,NA,F,18,snake,BW,BW_snake.wav,2,water,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,animal,animate
+ZU,ZU_2140141,zulu,english,TRUE,L2,NA,F,21,fire,KD,KD_fire.wav,3,fire,1,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,inanimate,inanimate
+ZU,ZU_2140000,zulu,english ,TRUE,L2,NA,M,19,fruit,GB,GB_fruit.wav,3,eat,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,inanimate,inanimate
+ZU,ZU_2138459,zulu,"english, xhosa",TRUE,L2,NA,F,22,cook,GB,GB_cook.wav,4,hunt,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,action,action,animate
+ZU,ZU_2140466,zulu,"english, xhosa",TRUE,L2,NA,F,25,eat,KD,KD_eat.wav,2,eat,1,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,action,action,animate
+ZU,ZU_2140360,zulu,"swazi, english",TRUE,L2,NA,M,28,tiger,NC,NC_tiger.wav,3,tiger,1,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,animal,animate
+ZU,ZU_2139894,zulu,"xhosa, english",TRUE,L2,NA,F,18,fire,IL,IL_fire.wav,2,fire,1,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,noun,inanimate,inanimate
+ZU,ZU_2138105,zulu,"xhosa, english, afrikaans",TRUE,L2,NA,F,25,that,KD,KD_that.wav,2,good,0,Zulu,zul,roman,Benue-Congo,S Africa,Africa,30,-30,other,property,demonstrative,animate

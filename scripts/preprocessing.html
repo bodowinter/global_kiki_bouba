@@ -430,6 +430,12 @@ kiki_ppt$Name &lt;- web[match(kiki_ppt$ID, web$ID), ]$Name
 kiki_ppt$Script &lt;- web[match(kiki_ppt$ID, web$ID), ]$Script
 kiki_ppt$Family &lt;- web[match(kiki_ppt$ID, web$ID), ]$Family
 kiki_ppt$Autotyp_Area &lt;- web[match(kiki_ppt$ID, web$ID), ]$Autotyp_Area</code></pre>
+<p>Merge L2 data in there:</p>
+<pre class="r"><code>L2 &lt;- read_csv('../data/english_recoded.csv')
+kiki_ppt &lt;- L2 %&gt;% select(ID, English_MP) %&gt;% right_join(kiki_ppt)</code></pre>
+<p>Make “NA” into “not reported” category:</p>
+<pre class="r"><code>L2 &lt;- mutate(L2,
+               English_MP = ifelse(is.na(English_MP), 'not reported', English_MP))</code></pre>
 <p>Write to file:</p>
 <pre class="r"><code>write_csv(kiki_ppt, '../data/web_experiment_cleaned.csv')</code></pre>
 </div>
@@ -500,8 +506,6 @@ for (i in seq_along(all_IDs)) {
 <pre class="r"><code>field_ppt &lt;- gather(field_ppt, key = 'Modality', value = 'Match', -ID)</code></pre>
 <p>Add the language information:</p>
 <pre class="r"><code>field_ppt$Language &lt;- field[match(field_ppt$ID, field$ID), ]$Language</code></pre>
-<p>Write this:</p>
-<pre class="r"><code>write_csv(field_ppt, '../data/field_experiment_cleaned.csv')</code></pre>
 </div>
 
 
