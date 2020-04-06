@@ -109,21 +109,196 @@ Get rid of the responses that are neither "kiki" nor "bouba", and likewise for "
 web <- filter(web, !inputvalue %in% c('jeść', 'wąż'))
 ```
 
-## Add language info:
+## Process L1 information:
 
-Load language file:
-
-```{r, message = FALSE}
-langs <- read_csv('../data/language_info.csv')
-```
-
-Merge:
+Create a table with one data point per participant with L2 information:
 
 ```{r}
-web <- left_join(web, langs)
+L2_info <- filter(web, !duplicated(ID)) %>% select(ID, Language, l1, l2)
 ```
 
-## Preprocessing:
+Get rid of trailing spaces:
+
+```{r}
+L2_info <- mutate(L2_info,
+                  l1 = str_trim(l1))
+```
+
+That one Chinese person who wrote "hi" in the language field probably knows English given that they used this word... this is the more conservative choice (working against our hypothesis):
+
+```{r}
+L2_info[L2_info$l1 == 'hi', ]$l1 <- 'chinese'
+L2_info[which(L2_info$l2 == 'hi'), ]$l2 <- 'english'
+```
+
+Perform replacements — for this, we take whatever is the person's first-listed language as their primary L1 (this only applies to a few cases anyway). In a few cases where there is overlap with another language of which we have multile speakers in the sample, the assignment will be done this way, e.g., "ukrainian, russian" -> "russian"
+
+```{r}
+L2_info <- mutate(L2_info,
+                  l1 = str_replace(l1, 'isizulu', 'zulu'),
+                  l1 = str_replace(l1, 'turkce', 'turkish'),
+                  l1 = str_replace(l1, 'swedish, korean', 'swedish'),
+                  l1 = str_replace(l1, 'french, spanish', 'french'),
+                  l1 = str_replace(l1, 'ukrainian, russian', 'russian'),
+                  l1 = str_replace(l1, 'portuguese, french, danish', 'portuguese'),
+                  l1 = str_replace(l1, 'finnish, estonian', 'finnish'),
+                  l1 = str_replace(l1, 'albanianja', 'albanian'),
+                  l1 = str_replace(l1, 'armenian, russian', 'armenian'),
+                  l1 = str_replace(l1, 'swissgerman', 'german'),
+                  l1 = str_replace(l1, 'austriangerman', 'german'),
+                  l1 = str_replace(l1, 'german, turkish', 'german'),
+                  l1 = str_replace(l1, 'german, english', 'german'),
+                  l1 = str_replace(l1, 'konkani, english', 'english'),
+                  l1 = str_replace(l1, 'español', 'spanish'),
+                  l1 = str_replace(l1, 'spanish, german', 'spanish'),
+                  l1 = str_replace(l1, 'italian, german', 'italian'),
+                  l1 = str_replace(l1, 'italian, german', 'italian'),
+                  l1 = str_replace(l1, 'italia', 'italian'),                  
+                  l1 = str_replace(l1, 'italiann', 'italian'),
+                  l1 = str_replace(l1, 'polish, silesian', 'polish'),
+                  l1 = str_replace(l1, 'swedish, finnish', 'swedish'),
+                  l1 = str_replace(l1, 'greek, german', 'greek'),
+                  l1 = str_replace(l1, 'russian, belarusian', 'russian'),
+                  l1 = str_replace(l1, 'georgian, mingrelian', 'georgian'),
+                  l1 = str_replace(l1, 'hi', 'chinese'),
+                  l1 = str_replace(l1, 'cchinesenese', 'chinese'))
+```
+
+## Process L2 information:
+
+Transform NAs into "this person knows no L2":
+
+```{r}
+L2_info <- mutate(L2_info,
+                  l2 = ifelse(is.na(l2), 'no_L2', l2))
+```
+
+Extract whether the person reports any English:
+
+```{r}
+L2_info <- mutate(L2_info,
+                  EnglishL2YesNo = str_detect(l2, 'english'))
+```
+
+Conversions:
+
+```{r}
+L2_info <- mutate(L2_info,
+                  l2 = str_replace(l2, 'potuguese', 'portuguese'),
+                  l2 = str_replace(l2, 'spanich', 'spanish'),
+                  l2 = str_replace(l2, 'calatan', 'catalan'),
+                  l2 = str_replace(l2, 'ancient greek', 'greek'),
+                  l2 = str_replace(l2, 'rumanian', 'romanian'),
+                  l2 = str_replace(l2, 'estniska', 'estonian'),
+                  l2 = str_replace(l2, 'calabrese', 'italian'),
+                  l2 = str_replace(l2, 'dari', 'farsi'))
+```
+
+Get all languages spoken:
+
+```{r}
+all_L2s <- str_replace_all(L2_info$l2, "(a little bit )|(a little )", "")
+all_L2s <- unlist(str_split(all_L2s, "(, )|(,)|(，)|(\\.)|( )"))
+all_L2s <- str_trim(all_L2s)
+all_L2s <- sort(unique(all_L2s))
+all_L2s <- all_L2s[!all_L2s %in% c("", "no_L2")]
+
+# Print:
+
+all_L2s
+```
+
+Put into table and match script as well as whether they are IE:
+
+```{r}
+L2_lang_info <- tibble(L2 = all_L2s)
+```
+
+Fill in script info:
+
+```{r}
+# For reference:
+
+ # c("afrikaans", "arabic", "armenian", "asl", "basque", "bulgarian",
+ #  "catalan", "chinese", "creole", "croatian", "czech", "danish",
+ #  "dutch", "english", "esperanto", "estonian", "farsi", "finnish",
+ #  "french", "georgian", "german", "greek", "hebrew", 
+ #  "hindi", "hungarian", "icelandic", "indonesian", "irish", "italian", 
+ #  "japanese", "korean", "latin", "latvian", "limburgish", "macedonian",
+ #  "nepali", "NGT", "norwegian", "polish", "portuguese", "romanian",
+ #  "russian", "saami", "sanskrit", "serbian", "slovak", "sotho",
+ #  "spanish", "swahili", "swazi", "swedish", "tamil", "turkish",
+ #  "vietnamese", "xhosa")
+
+L2_lang_info$L2_script <- c("roman", "other script", "other script", "not script", "roman", "other script",
+  "roman", "other script", "roman", "roman", "roman", "roman",
+  "roman", "roman", "roman", "roman", "other script", "roman",
+  "roman", "other script", "roman", "other script", "other script",
+  "other script", "roman", "roman", "other script", "roman", "roman",
+  "other script", "other script", "roman", "roman", "roman", "other script",
+  "other script", "no script", "roman", "roman", "roman", "roman",
+  "other script", "roman", "other script", "other script", "roman", "roman",
+  "roman", "roman", "roman", "roman", "other script", "roman",
+  "roman", "roman")
+
+# Serbian is counted as "other" because of cyrillic despite digraphia
+
+```
+
+Fill in IE info:
+
+```{r}
+L2_lang_info$L2_IE <- c("IE", "not IE", "IE", "not IE", "not IE", "IE",
+  "IE", "not IE", "not IE", "IE", "IE", "IE",
+  "IE", "IE", "IE", "not IE", "not IE", "not IE",
+  "IE", "not IE", "IE", "IE", "not IE",
+  "IE", "not IE", "IE", "not IE", "IE", "IE",
+  "not IE", "not IE", "IE", "IE", "IE", "IE",
+  "IE", "not IE", "IE", "IE", "IE", "IE",
+  "IE", "not IE", "IE", "IE", "IE", "not IE",
+  "IE", "not IE", "not IE", "IE", "not IE", "not IE",
+  "not IE", "not IE")
+```
+
+Get big regular expressions out of those that have roman script:
+
+```{r}
+# IE:
+
+IE_regex <- str_c(filter(L2_lang_info, L2_IE == 'IE')$L2,
+                  collapse = '|')
+
+# Script:
+
+roman_regex <- str_c(filter(L2_lang_info, L2_script == 'roman')$L2,
+                     collapse = '|')
+```
+
+Create variables based on that for all speakers. First, whether they know at least one language that has a roman alphabet:
+
+```{r}
+L2_info <- mutate(L2_info,
+                  RomanScriptL2 = str_detect(l2, roman_regex),
+                  IEL2 = str_detect(l2, IE_regex))
+```
+
+Match this with the "web" data frame:
+
+```{r}
+web <- left_join(web, select(L2_info, -Language), by = c('ID' = 'ID'))
+```
+
+Rename:
+
+```{r}
+web <- rename(web,
+              L1_raw = l1.x,
+              L2_raw = l2.x,
+              L1_cleaned = l1.y,
+              L2_cleaned = l2.y)
+```
+
+## Exclusions based on insufficient data:
 
 How much data per language?
 
@@ -149,7 +324,7 @@ Which one?
 filter(ppt_N, n != 2)
 ```
 
-Get rid of this participant:
+Get rid of these participants:
 
 ```{r}
 # Vector of participants to exclude:
@@ -176,6 +351,62 @@ web <- filter(web, Language != "MS")
 web <- filter(web, Language != "TA")
 ```
 
+Get rid of L1 speakers that differ from the sample they are supposed to belong to:
+
+```{r}
+web <- filter(web,
+              !L1_cleaned %in% c('arabic', 'zhuang', 'esperanto',
+                                 'kurdish', 'pashto',
+                                 'wolof'))
+
+# Close enough for our purposes from the perspective of kiki/bouba and the fact that language families don't cross — sorry if you are a speaker of one of these languages as we recognize the difference, but the most important thing is that these do not exert a bias from a "macro perspective" of language families:
+
+web[web$L1_cleaned == 'catalan', ]$L1_cleaned <- 'spanish'
+web[web$L1_cleaned == 'finnish', ]$L1_cleaned <- 'estonian'
+web[web$L1_cleaned == 'dutch', ]$L1_cleaned <- 'german'
+web[web$L1_cleaned == 'czech', ]$L1_cleaned <- 'polish'
+web[web$L1_cleaned == 'latvian', ]$L1_cleaned <- 'polish'
+```
+
+Check which ones are misaligned:
+
+```{r}
+table(web$L1_cleaned, web$Language)
+web[web$L1_cleaned == 'russian', ]$Language <- 'RU'
+web[web$L1_cleaned == 'armenian', ]$Language <- 'AM'
+web[web$L1_cleaned == 'chinese', ]$Language <- 'CN'
+web[web$L1_cleaned == 'english', ]$Language <- 'EN'
+web[web$L1_cleaned == 'estonian', ]$Language <- 'EE'
+web[web$L1_cleaned == 'german', ]$Language <- 'DE'
+web[web$L1_cleaned == 'french', ]$Language <- 'FR'
+web[web$L1_cleaned == 'italian', ]$Language <- 'IT'
+web[web$L1_cleaned == 'korean', ]$Language <- 'KR'
+web[web$L1_cleaned == 'polish', ]$Language <- 'PL'
+web[web$L1_cleaned == 'zulu', ]$Language <- 'ZU'
+web[web$L1_cleaned == 'spanish', ]$Language <- 'ES'
+web[web$L1_cleaned == 'swedish', ]$Language <- 'SE'
+web[web$L1_cleaned == 'portuguese', ]$Language <- 'PT'
+web[web$L1_cleaned == 'thai', ]$Language <- 'TH'
+```
+
+
+## Add language info:
+
+Load language file:
+
+```{r, message = FALSE}
+langs <- read_csv('../data/language_info.csv')
+```
+
+Merge:
+
+```{r}
+web <- left_join(web, langs)
+```
+
+
+## Create response variable
+
 Change main response to "Resp":
 
 ```{r}
@@ -190,39 +421,6 @@ web <- mutate(web,
               Condition = str_replace(audio, '\\.wav', ''),
               Condition = str_to_title(Condition))
 ```
-
-## Process L2 info:
-
-Extract who knows English from l2 column.
-
-```{r}
-web <- mutate(web,
-              EnglishL2 = str_detect(l2, 'english'))
-```
-
-Create tables that tabulate L2 speaker info per language.
-
-```{r}
-# Create table per subject:
-
-L2_counts <- web %>% filter(Language != 'EN') %>% count(ID, Language, EnglishL2)
-
-# Create table per language:
-
-L2_tab <- with(L2_counts, table(Language, EnglishL2))
-
-```
-
-Check L2 speaker stats:
-
-```{r}
-L2_tab
-
-colSums(L2_tab)
-
-colSums(L2_tab) / sum(L2_tab)
-```
-
 
 ## By-participant preprocessing
 
@@ -259,20 +457,9 @@ kiki_ppt$Name <- web[match(kiki_ppt$ID, web$ID), ]$Name
 kiki_ppt$Script <- web[match(kiki_ppt$ID, web$ID), ]$Script
 kiki_ppt$Family <- web[match(kiki_ppt$ID, web$ID), ]$Family
 kiki_ppt$Autotyp_Area <- web[match(kiki_ppt$ID, web$ID), ]$Autotyp_Area
-```
-
-Merge L2 data in there:
-
-```{r, message = FALSE}
-L2 <- read_csv('../data/english_recoded.csv')
-kiki_ppt <- L2 %>% select(ID, English_MP) %>% right_join(kiki_ppt)
-```
-
-Make "NA" into "not reported" category:
-
-```{r}
-L2 <- mutate(L2,
-               English_MP = ifelse(is.na(English_MP), 'not reported', English_MP))
+kiki_ppt$EnglishL2YesNo <- web[match(kiki_ppt$ID, web$ID), ]$EnglishL2YesNo
+kiki_ppt$RomanScriptL2 <- web[match(kiki_ppt$ID, web$ID), ]$RomanScriptL2
+kiki_ppt$IEL2 <- web[match(kiki_ppt$ID, web$ID), ]$IEL2
 ```
 
 Write to file:
