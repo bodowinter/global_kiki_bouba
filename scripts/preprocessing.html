@@ -868,6 +868,14 @@ for (i in seq_along(all_IDs)) {
 <p>Add the language information:</p>
 <pre class="r"><code>field_ppt$Language &lt;- field[match(field_ppt$ID, field$ID), ]$Language</code></pre>
 </div>
+<div id="the-first-five-participants-in-the-field-experiment-have-been-wrongly-coded" class="section level2">
+<h2>The first five participants in the field experiment have been wrongly coded:</h2>
+<p>Email from Ola Feb 10, 2020 indicates that the first five participants in the German data of the field experiment have been erroneously coded as mismatches (0), even though they were matches:</p>
+<pre class="r"><code>these_ppts &lt;- str_c('DE0', 1:5)
+field_ppt[field_ppt$ID %in% these_ppts &amp; !is.na(field_ppt$Match), ]$Match &lt;- 1</code></pre>
+<p>Write this:</p>
+<pre class="r"><code>write_csv(field_ppt, '../data/field_experiment_cleaned.csv')</code></pre>
+</div>
 
 
 

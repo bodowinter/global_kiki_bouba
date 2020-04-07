@@ -457,6 +457,7 @@ kiki_ppt$Name <- web[match(kiki_ppt$ID, web$ID), ]$Name
 kiki_ppt$Script <- web[match(kiki_ppt$ID, web$ID), ]$Script
 kiki_ppt$Family <- web[match(kiki_ppt$ID, web$ID), ]$Family
 kiki_ppt$Autotyp_Area <- web[match(kiki_ppt$ID, web$ID), ]$Autotyp_Area
+kiki_ppt$L2 <- web[match(kiki_ppt$ID, web$ID), ]$L2_raw
 kiki_ppt$EnglishL2YesNo <- web[match(kiki_ppt$ID, web$ID), ]$EnglishL2YesNo
 kiki_ppt$RomanScriptL2 <- web[match(kiki_ppt$ID, web$ID), ]$RomanScriptL2
 kiki_ppt$IEL2 <- web[match(kiki_ppt$ID, web$ID), ]$IEL2
@@ -580,3 +581,17 @@ Add the language information:
 field_ppt$Language <- field[match(field_ppt$ID, field$ID), ]$Language
 ```
 
+## The first five participants in the field experiment have been wrongly coded:
+
+Email from Ola Feb 10, 2020 indicates that the first five participants in the German data of the field experiment have been erroneously coded as mismatches (0), even though they were matches:
+
+```{r}
+these_ppts <- str_c('DE0', 1:5)
+field_ppt[field_ppt$ID %in% these_ppts & !is.na(field_ppt$Match), ]$Match <- 1
+```
+
+Write this:
+
+```{r}
+write_csv(field_ppt, '../data/field_experiment_cleaned.csv')
+```

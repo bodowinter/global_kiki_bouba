@@ -9,9 +9,6 @@ output: html_document
 
 This script takes the models that are produced by "bayes_models.R" and reports summary results:
 
-Note on the field experiment:
-The field work experiment is not reported in the main analysis. We do find a clear kiki/bouba effect in the field work data, however, there was a critical error in the procedure: the written version was always run before the spoken version. As a result of this, the spoken versus written comparison is not interpretable, as the spoken results could be biased by having seen a prior orthographic representation. Moreover, the web experiment and the field experiment are thus not comparable anymore.
-
 Load packages:
 
 ```{r, message = FALSE, warning = FALSE}
@@ -30,20 +27,6 @@ Get data to plot descriptive averages to the model:
 
 ```{r, message = FALSE, warning = FALSE}
 kiki <- read_csv('../data/web_experiment_cleaned.csv')
-
-# Marcus's newly recoded L2 data:
-
-L2 <- read_csv('../data/english_recoded.csv')
-```
-
-There is a German and a French speaker that according to Marcus's recording of the L1/L2 info are wrongly coded as German/French. These arae English natives living in Germany / France who have filled out the German / French version of the survey.
-
-```{r}
-kiki[which(kiki$English_MP == 'L1' & kiki$Language == 'DE'), ]$Name <- 'English'
-kiki[which(kiki$English_MP == 'L1' & kiki$Language == 'FR'), ]$Name <- 'English'
-
-kiki[which(kiki$English_MP == 'L1' & kiki$Language == 'DE'), ]$Language <- 'EN'
-kiki[which(kiki$English_MP == 'L1' & kiki$Language == 'FR'), ]$Language <- 'EN'
 ```
 
 Load ggplot2 theme:
@@ -56,20 +39,16 @@ Load the model:
 
 ```{r}
 load('../models/kiki_mdl.RData')
-load('../models/kiki_L2_mdl.RData')
 load('../models/kiki_script_mdl.RData')
-load('../models/kiki_noENG_mdl.RData')
 load('../models/daakie_mdl.RData')
-# load('../models/kiki_field_mdl.RData')
-# load('../models/field_ort_mdl.RData')
-# load('../models/field_aud_mdl.RData')
+load('../models/kiki_AnyRoman_mdl.RData')
+load('../models/kiki_scriptL2_mdl.RData')
 ```
 
 Load language data for plotting:
 
 ```{r, message = FALSE}
 lang_info <- read_csv('../data/language_info.csv')
-# field_info <- read_csv('../data/language_info_field.csv')
 ```
 
 ## Posterior predictive checks:
@@ -79,10 +58,9 @@ Posterior predictive checks:
 ```{r cache = TRUE, fig.width = 8, fig.height = 6}
 pp_check(kiki_mdl, nsample = 1000)
 pp_check(kiki_script_mdl, nsample = 1000)
-pp_check(kiki_L2_mdl, nsample = 1000)
-# pp_check(kiki_field_mdl, nsample = 1000)
-# pp_check(aud_mdl, nsample = 1000)
-# pp_check(ort_mdl, nsample = 1000)
+pp_check(kiki_AnyRoman_mdl, nsample = 1000)
+pp_check(kiki_scriptL2_mdl, nsample = 1000)
+pp_check(daakie_mdl, nsample = 1000)
 ```
 
 ## Summarize models:
@@ -111,71 +89,6 @@ Posterior predictive probability of the intercept being above chance (logit = 0)
 
 ```{r}
 sum(web_posts$b_Intercept < 0) / nrow(web_posts)
-```
-
-Second, field model (with modality effect ignored):
-
-```{r}
-# summary(kiki_field_mdl)
-```
-
-Extract the posteriors:
-
-```{r}
-# field_posts <- posterior_samples(kiki_field_mdl)
-```
-
-Get the 95% credible interval in terms of predicted probabilities:
-
-```{r}
-# plogis(mean(field_posts$b_Intercept))
-# plogis(quantile(field_posts$b_Intercept, 0.025))
-# plogis(quantile(field_posts$b_Intercept, 0.975))
-```
-
-Posterior predictive probability of the intercept being above chance (logit = 0).
-
-```{r}
-# sum(field_posts$b_Intercept < 0) / nrow(field_posts)
-```
-
-## Separate analysis for auditory and written version of field experiment:
-
-Separate model summaries:
-
-```{r}
-# summary(aud_mdl)
-# summary(ort_mdl)
-```
-
-Extract posteriors:
-
-```{r}
-# aud_posts <- posterior_samples(aud_mdl)
-# ort_posts <- posterior_samples(ort_mdl)
-```
-
-Posterior estimates of the intercepts:
-
-```{r}
-# sum(aud_posts$b_Intercept < 0) / nrow(aud_posts)
-# sum(ort_posts$b_Intercept < 0) / nrow(ort_posts)
-```
-
-Get the 95% credible interval in terms of predicted probabilities, auditory only:
-
-```{r}
-# plogis(mean(aud_posts$b_Intercept))
-# plogis(quantile(aud_posts$b_Intercept, 0.025))
-# plogis(quantile(aud_posts$b_Intercept, 0.975))
-```
-
-Get the 95% credible interval in terms of predicted probabilities, written only:
-
-```{r}
-# plogis(mean(ort_posts$b_Intercept))
-# plogis(quantile(ort_posts$b_Intercept, 0.025))
-# plogis(quantile(ort_posts$b_Intercept, 0.975))
 ```
 
 ## Check orthography-related effects in web-based experiments:
@@ -214,109 +127,64 @@ plogis(fixef(kiki_script_mdl)[1, 1] + fixef(kiki_script_mdl)[2, 1])
 exp(fixef(kiki_script_mdl)[2, 1])
 ```
 
-This completes this analysis.
 
 ## Check the L2 related effects:
 
 Check script effect in web experiment:
 
 ```{r}
-summary(kiki_L2_mdl)
+summary(kiki_AnyRoman_mdl)
 ```
 
 Get the posterior predictions:
 
 ```{r}
-script_posts <- posterior_samples(kiki_L2_mdl)
+L2_posts <- posterior_samples(kiki_AnyRoman_mdl)
+```
+
+Intercept?
+
+```{r}
+sum(L2_posts$b_Intercept > 0) / nrow(L2_posts)
+```
+
+## Check script L2 effect:
+
+Summarize model:
+
+```{r}
+summary(kiki_scriptL2_mdl)
+```
+
+Get the posterior predictions:
+
+```{r}
+scriptL2_posts <- posterior_samples(kiki_scriptL2_mdl)
 ```
 
 Check whether the coefficients are reliably different from 0:
 
 ```{r}
-sum(script_posts$b_English_MPno < 0) / nrow(script_posts)
+sum(scriptL2_posts$b_factorRomanScriptL2TRUE < 0) / nrow(scriptL2_posts)
 ```
 
 What is the predicted increase in probability for roman script?
 
 ```{r}
-# English as L2:
+# Non-roman script:
 
-plogis(fixef(kiki_L2_mdl)[1, 1])
+plogis(fixef(kiki_scriptL2_mdl)[1, 1])
 
-# No English as L2:
+# Roman script:
 
-plogis(fixef(kiki_L2_mdl)[1, 1] + fixef(kiki_L2_mdl)[2, 1])
+plogis(fixef(kiki_scriptL2_mdl)[1, 1] + fixef(kiki_scriptL2_mdl)[2, 1])
 
 # Odds:
 
-exp(fixef(kiki_L2_mdl)[2, 1])
+exp(fixef(kiki_scriptL2_mdl)[2, 1])
 ```
 
-## Subset analysis of those speakers that do not known English as L2:
 
-Check model with no English L2 speakers:
-
-```{r}
-summary(kiki_noENG_mdl)
-```
-
-Get the posterior mean estimate:
-
-```{r}
-plogis(fixef(kiki_noENG_mdl)[1])
-```
-
-Get the posteriors:
-
-```{r}
-noENG_post <- posterior_samples(kiki_noENG_mdl)
-```
-
-Get 95% Bayesian CI:
-
-```{r}
-plogis(quantile(noENG_post$b_Intercept, 0.025))
-plogis(quantile(noENG_post$b_Intercept, 0.975))
-```
-
-Calculate posterior probability of the effect being above 0:
-
-```{r}
-sum(noENG_post$b_Intercept > 0) / nrow(noENG_post)
-```
-
-## Subset analysis of L2 versus no-L2 English:
-
-Check model with no English L2 speakers:
-
-```{r}
-summary(kiki_noENG_mdl)
-```
-
-Get the posterior mean estimate:
-
-```{r}
-plogis(fixef(kiki_noENG_mdl)[1])
-```
-
-Get the posteriors:
-
-```{r}
-noENG_post <- posterior_samples(kiki_noENG_mdl)
-```
-
-Get 95% Bayesian CI:
-
-```{r}
-plogis(quantile(noENG_post$b_Intercept, 0.025))
-plogis(quantile(noENG_post$b_Intercept, 0.975))
-```
-
-Calculate posterior probability of the effect being above 0:
-
-```{r}
-sum(noENG_post$b_Intercept > 0) / nrow(noENG_post)
-```
 
 ## Check Daakie speakers:
 
@@ -438,11 +306,12 @@ web_p <- web_p +
 
 web_p <- web_p + 
   labs(x = '', y = 'Proportion\n') +
-  ggtitle('Posterior means and descriptive averages of matching responses by language and script') + 
+  ggtitle('(c) Posterior means and descriptive averages of matching responses by language and script') + 
   coord_cartesian(ylim = c(0, 1)) + 
   scale_color_viridis_d(option = 'D', begin = 0.3, end = 0.8, direction = 1) +
   theme_timo +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, face = 'bold', size = 24),
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, face = 'bold',
+                                   size = 30),
         axis.text.y = element_text(face = 'bold', size = 24),
         axis.title = element_text(face = 'bold', size = 40),
         axis.title.y = element_text(face = 'bold', size = 40),
@@ -460,7 +329,7 @@ web_p
 
 # Save:
 
-ggsave(plot = web_p, filename = '../figures/Figure3_Bayes_descriptive.pdf',
+ggsave(plot = web_p, filename = '../figures/Figure1c_Bayes_descriptive.pdf',
        width = 28, height = 12)
 ```
 
